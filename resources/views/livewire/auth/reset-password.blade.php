@@ -15,8 +15,12 @@
                             <div class="card-body">
                                 <form wire:submit.prevent="update" class="text-start">
                                     @if (Session::has('email'))
-                                    <div class="alert alert-danger text-light" role="alert">
-                                     {{ Session::get('email') }}
+                                    <div class="alert alert-danger alert-dismissible text-white" role="alert">
+                                        <span class="text-sm">{{ Session::get('email') }}</span>
+                                        <button type="button" class="btn-close text-lg py-3 opacity-10"
+                                            data-bs-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                     </div>
                                     @endif
                                     @error('email')

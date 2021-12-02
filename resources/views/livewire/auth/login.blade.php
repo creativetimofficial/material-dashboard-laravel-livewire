@@ -38,18 +38,24 @@
                                     <p class='text-danger'>{{ $message }} </p>
                                     @enderror
                                     @if (Session::has('status'))
-                                    <div class="alert alert-success text-light" role="alert">
-                                       {{ Session::get('status') }}
-                                   </div>
+                                    <div class="alert alert-success alert-dismissible text-white" role="alert">
+                                        <span class="text-sm">{{ Session::get('status') }}</span>
+                                        <button type="button" class="btn-close text-lg py-3 opacity-10"
+                                            data-bs-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
                                     @endif
                                     <div class="input-group input-group-outline my-3">
-                                        <input wire:model.lazy='email' type="email" class="form-control" required value="{{ 'admin@material.com' }}" placeholder="Email">
+                                        <input wire:model.lazy='email' type="email" class="form-control" required
+                                            value="{{ 'admin@material.com' }}" placeholder="Email">
                                     </div>
                                     @error('password')
                                     <p class='text-danger'>{{ $message }} </p>
                                     @enderror
                                     <div class="input-group input-group-outline mb-3">
-                                        <input wire:model.lazy="password" type="password" class="form-control" value='{{ 'secret'}}' required placeholder="Password">
+                                        <input wire:model.lazy="password" type="password" class="form-control"
+                                            value='{{ 'secret'}}' required placeholder="Password">
                                     </div>
                                     <div class="form-check form-switch d-flex align-items-center mb-3">
                                         <input class="form-check-input" type="checkbox" id="rememberMe">
