@@ -48,14 +48,14 @@
                                     @endif
                                     <div class="input-group input-group-outline my-3">
                                         <input wire:model.lazy='email' type="email" class="form-control" required
-                                            value="{{ 'admin@material.com' }}" placeholder="Email">
+                                             placeholder="Email">
                                     </div>
                                     @error('password')
                                     <p class='text-danger'>{{ $message }} </p>
                                     @enderror
                                     <div class="input-group input-group-outline mb-3">
                                         <input wire:model.lazy="password" type="password" class="form-control"
-                                            value='{{ 'secret'}}' required placeholder="Password">
+                                             required placeholder="Password">
                                     </div>
                                     <div class="form-check form-switch d-flex align-items-center mb-3">
                                         <input class="form-check-input" type="checkbox" id="rememberMe">
