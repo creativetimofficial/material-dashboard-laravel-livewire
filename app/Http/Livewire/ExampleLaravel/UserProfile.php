@@ -10,18 +10,25 @@ class UserProfile extends Component
 
     public User $user;
 
-    protected $rules = [
-        'user.email' => 'required|email',
-        'user.name' => 'required',
-        'user.phone' => 'required|max:10',
-        'user.about' => 'required:max:150',
-        'user.location' => 'required'
-    ];
+    protected function rules(){
+        return [
+            'user.name' => 'required',
+            'user.email' => 'required|email|unique:users,email,'.$this->user->id,
+            'user.phone' => 'required|max:10',
+            'user.about' => 'required:max:150',
+            'user.location' => 'required'
+        ];
+    }
 
     public function mount() { 
         $this->user = auth()->user();
     }
 
+    public function updated($propertyName){
+
+        $this->validateOnly($propertyName);
+    }
+    
     public function update()
     {
         $this->validate();
