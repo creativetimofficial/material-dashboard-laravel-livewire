@@ -111,8 +111,7 @@
                                 @enderror
                                     <label for="floatingTextarea2">About</label>
                                     <textarea wire:model.lazy="user.about" class="form-control border border-2 p-2"
-                                        placeholder=" Say something about yourself" id="floatingTextarea2"
-                                        style="height: 100px"></textarea>
+                                        placeholder=" Say something about yourself" id="floatingTextarea2" rows="4" cols="50"></textarea>
                                 </div>
                             </div>
                             <button type="submit" class="btn bg-gradient-dark">Submit</button>
