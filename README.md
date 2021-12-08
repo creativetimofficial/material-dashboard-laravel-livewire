@@ -129,7 +129,7 @@ If a user forgets the account's password it is possible to reset the password. F
 The `App/Http/Livewire/Auth/ForgotPassword.php` takes care of sending an email to the user where he can reset the password afterwards.
 
 ```
-       ppublic function show(){
+       public function show(){
           
                   $this->validate();
           
