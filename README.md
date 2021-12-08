@@ -80,7 +80,7 @@ Besides the dashboard, the auth pages, the billing and table pages, there is als
 [View More](https://material-dashboard-laravel.creative-tim.com/dashboard)
 
 ## Documentation
-The documentation for the Material Dashboard 2 Laravel is hosted at our [website](https://material-dashboard-laravel.creative-tim.com/documentation/getting-started/installation.html).
+The documentation for the Material Dashboard Laravel is hosted at our [website](https://material-dashboard-laravel.creative-tim.com/documentation/getting-started/installation.html).
 
 ### Login
 If you are not logged in you can only access this page or the Sign Up page. The default url takes you to the login page where you use the default credentials **admin@material.com** with the password **secret**. Logging in is possible only with already existing credentials. For this to work you should have run the migrations. 
@@ -215,80 +215,50 @@ You can access the dashboard either by using the "**Dashboard**" link in the lef
 |   |   |       TrustProxies.php
 |   |   |       VerifyCsrfToken.php
 |   |   |
+|   |   +---Livewire
+|   |   |   | 
+|   |   |   +---Auth
+|   |   |   |     ForgotPassword.php
+|   |   |   |     Login.php
+|   |   |   |     Logout.php
+|   |   |   |     Register.php
+|   |   |   |     ResetPassword.php
+|   |   |   | 
+|   |   |   +---ExampleLaravel 
+|   |   |   |     UserManagement.php
+|   |   |   |     UserProfile.php
+|   |   |   |
+|   |   |   |   Billing.php
+|   |   |   |   Dashboard.php
+|   |   |   |   Notifications.php
+|   |   |   |   Profile.php
+|   |   |   |   RTL.php
+|   |   |   |   StaticSignIn.php
+|   |   |   |   StaticSignUp.php
+|   |   |   |   Tables.php
+|   |   |   \   VirtualReality.php
+|   |   |   
 |   |    \---Kernel.php   
 |   |   
 |   +---Models
 |   |        User.php
+|   |
+|   +---Notifications
+|   |        ResetPassword.php
 |   |     
-|   \---Proviers
-|          AppServiceProvider.php
-|          AuthServiceProvider.php
-|          BroadcastServiceProvider.php
-|          EventServiceProvider.php
-|          RouteServiceProvider.php
+|   |---Proviers
+|   |      AppServiceProvider.php
+|   |      AuthServiceProvider.php
+|   |      BroadcastServiceProvider.php
+|   |      EventServiceProvider.php
+|   |      RouteServiceProvider.php
+|   | 
+|   \---View
+|          App.php
+|          Base.php
 |   
-+---database
-|   \---seeders
-|           DatabaseSeeder.php
-|
-\---resources
-    |
-    |
-    \---views
-        |   welcome.blade.php
-        |   
-        +---sessions
-        |   |   create.blade.php
-        |   |   
-        |   \---passwords
-        |           reset.blade.php
-        |           verify.blade.php
-        |           
-        +---components
-        |   |   layout.blade.php
-        |   |   plugins.blade.php
-        |   |   
-        |   +---footers
-        |   |       auth.blade.php
-        |   |       guest.blade.php
-        |   |       
-        |   \---navbars
-        |      |   sidebar.blade.php
-        |      |   
-        |      \---navs
-        |             auth.blade.php
-        |             guest.blade.php
-        |              
-        |           
-        +---pages
-        |   |   billing.blade.php
-        |   |   notifications.blade.php
-        |   |   profile.blade.php
-        |   |   rtl.blade.php
-        |   |   static-sign-in.blade.php
-        |   |   static-sign-up.blade.php
-        |   |   tables.blade.php
-        |   |   virtual-reality.blade.php
-        |   |  
-        |   \---laravel-examples
-        |           user-management.blade.php
-        |           user-profile.blade.php
-        |       
-        +---dashboard
-        |       index.blade.php
-        | 
-        +---errors
-        |       401.blade.php
-        |       403.blade.php
-        |       404.blade.php
-        |       405.blade.php
-        |       419.blade.php
-        |       429.blade.php
-        |       500.blade.php
-        |       503.blade.php
-        |
-        \---register
-                create.blade.php
+....
+
 ```
 
 ## Browser Support
