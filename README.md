@@ -80,7 +80,7 @@ Besides the dashboard, the auth pages, the billing and table pages, there is als
 [View More](https://material-dashboard-laravel.creative-tim.com/dashboard)
 
 ## Documentation
-The documentation for the Soft UI Dashboard Laravel is hosted at our [website](https://material-dashboard-laravel.creative-tim.com/documentation/getting-started/installation.html).
+The documentation for the Material Dashboard 2 Laravel is hosted at our [website](https://material-dashboard-laravel.creative-tim.com/documentation/getting-started/installation.html).
 
 ### Login
 If you are not logged in you can only access this page or the Sign Up page. The default url takes you to the login page where you use the default credentials **admin@material.com** with the password **secret**. Logging in is possible only with already existing credentials. For this to work you should have run the migrations. 
