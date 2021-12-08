@@ -200,10 +200,6 @@ You can access the dashboard either by using the "**Dashboard**" link in the lef
 |   +---Http
 |   |   +---Controllers
 |   |   |       Controller.php
-|   |   |       DashboardController.php
-|   |   |       ProfileController.php
-|   |   |       SessionsController.php
-|   |   |       RegisterController.php
 |   |   |       
 |   |   +---Middleware
 |   |   |       Authenticate.php
