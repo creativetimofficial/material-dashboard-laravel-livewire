@@ -11,7 +11,7 @@
           {{ $slot }}         
         @else
                 {{ $slot }}
-
+        <x-footers.guest></x-footers.guest>
         @endif
     @elseif (in_array(request()->route()->getName(),['rtl']))
     {{ $slot }}
