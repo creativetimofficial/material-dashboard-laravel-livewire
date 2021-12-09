@@ -47,8 +47,9 @@
                                 <p class='text-danger inputerror'>{{ $message }} </p>
                                 @enderror
                                 <div class="input-group input-group-outline my-3">
+                                    <label class="form-label">Email</label>
                                     <input wire:model.lazy="email" type="email" class="form-control" required
-                                        placeholder="Email">
+                                        >
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn bg-gradient-primary w-100 my-4 mb-2">Send</button>
@@ -66,3 +67,17 @@
         </div>
     </div>
 </main>
+@push('js')
+<script src="{{ asset('assets') }}/js/jquery.min.js"></script>
+<script>
+    $(function() {
+
+    var text_val = $(".input-group input").val();
+    if (text_val === "") {
+      $(".input-group").removeClass('is-filled');
+    } else {
+      $(".input-group").addClass('is-filled');
+    }
+});
+</script>
+@endpush

@@ -24,21 +24,24 @@
                                             <p class='text-danger inputerror'>{{ $message }} </p>
                                             @enderror
                                             <div class="input-group input-group-outline mb-3">
+                                                <label class="form-label">Name</label>
                                                 <input wire:model.lazy="name" type="text" class="form-control" 
-                                                     required placeholder="Name">
+                                                     required>
                                             </div>
                                             @error('email')
                                             <p class='text-danger inputerror'>{{ $message }} </p>
                                             @enderror
                                             <div class="input-group input-group-outline mb-3">
+                                                <label class="form-label">Email</label>
                                                 <input wire:model.lazy="email" type="email"  class="form-control"
-                                                     required placeholder="Email">
+                                                     required>
                                             </div>
                                             @error('password')
                                             <p class='text-danger inputerror'>{{ $message }} </p>
                                             @enderror
                                             <div class="input-group input-group-outline mb-3">
-                                                <input wire:model.lazy="password" type="password" class="form-control" required placeholder="Password">
+                                                <label class="form-label">Password</label>
+                                                <input wire:model.lazy="password" type="password" class="form-control" required>
                                             </div>
                                             <div class="form-check form-check-info text-start ps-0">
                                                 <input class="form-check-input" type="checkbox" value=""
@@ -69,4 +72,17 @@
                 </div>
             </section>
         </main>
-
+        @push('js')
+        <script src="{{ asset('assets') }}/js/jquery.min.js"></script>
+        <script>
+            $(function() {
+        
+            var text_val = $(".input-group input").val();
+            if (text_val === "") {
+              $(".input-group").removeClass('is-filled');
+            } else {
+              $(".input-group").addClass('is-filled');
+            }
+        });
+        </script>
+        @endpush

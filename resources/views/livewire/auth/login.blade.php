@@ -46,16 +46,17 @@
                                         </button>
                                     </div>
                                     @endif
-                                    <div class="input-group input-group-outline my-1">
-                                        <input wire:model.lazy='email' type="email" class="form-control" required
-                                             placeholder="Email">
+                                    <div class="input-group input-group-outline mb-3">
+                                        <label class="form-label">Email</label>
+                                        <input wire:model.lazy='email' type="email" class="form-control" required>
                                     </div>
                                     @error('password')
                                     <p class='text-danger inputerror'>{{ $message }} </p>
                                     @enderror
                                     <div class="input-group input-group-outline mb-3">
+                                        <label class="form-label">Password</label>
                                         <input wire:model.lazy="password" type="password" class="form-control"
-                                             required placeholder="Password">
+                                             required>
                                     </div>
                                     <div class="form-check form-switch d-flex align-items-center mb-3">
                                         <input class="form-check-input" type="checkbox" id="rememberMe">
@@ -84,3 +85,17 @@
             </div>
     </div>
 </main>
+@push('js')
+<script src="{{ asset('assets') }}/js/jquery.min.js"></script>
+<script>
+    $(function() {
+
+    var text_val = $(".input-group input").val();
+    if (text_val === "") {
+      $(".input-group").removeClass('is-filled');
+    } else {
+      $(".input-group").addClass('is-filled');
+    }
+});
+</script>
+@endpush
