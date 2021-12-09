@@ -8,7 +8,8 @@
             </div>
         </div>
         @if (in_array(request()->route()->getName(),[ 'static-sign-up', 'register']))
-          {{ $slot }}         
+          {{ $slot }}
+            
         @else
                 {{ $slot }}
         <x-footers.guest></x-footers.guest>

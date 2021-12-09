@@ -23,7 +23,7 @@
                                             @error('name')
                                             <p class='text-danger inputerror'>{{ $message }} </p>
                                             @enderror
-                                            <div class="input-group input-group-outline mb-3">
+                                            <div class="input-group input-group-outline mb-3 @if(strlen($name?? '') > 0) is-filled @endif">
                                                 <label class="form-label">Name</label>
                                                 <input wire:model.lazy="name" type="text" class="form-control" 
                                                      required>
@@ -31,7 +31,7 @@
                                             @error('email')
                                             <p class='text-danger inputerror'>{{ $message }} </p>
                                             @enderror
-                                            <div class="input-group input-group-outline mb-3">
+                                            <div class="input-group input-group-outline mb-3 @if(strlen($email ?? '') > 0) is-filled @endif">
                                                 <label class="form-label">Email</label>
                                                 <input wire:model.lazy="email" type="email"  class="form-control"
                                                      required>
@@ -39,7 +39,7 @@
                                             @error('password')
                                             <p class='text-danger inputerror'>{{ $message }} </p>
                                             @enderror
-                                            <div class="input-group input-group-outline mb-3">
+                                            <div class="input-group input-group-outline mb-3 @if(strlen($password ?? '') > 0) is-filled @endif">
                                                 <label class="form-label">Password</label>
                                                 <input wire:model.lazy="password" type="password" class="form-control" required>
                                             </div>
@@ -72,17 +72,3 @@
                 </div>
             </section>
         </main>
-        @push('js')
-        <script src="{{ asset('assets') }}/js/jquery.min.js"></script>
-        <script>
-            $(function() {
-        
-            var text_val = $(".input-group input").val();
-            if (text_val === "") {
-              $(".input-group").removeClass('is-filled');
-            } else {
-              $(".input-group").addClass('is-filled');
-            }
-        });
-        </script>
-        @endpush

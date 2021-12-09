@@ -17,21 +17,21 @@
                                     @error('email')
                                     <p class='text-danger inputerror'>{{ $message }} </p>
                                     @enderror
-                                    <div class="input-group input-group-outline my-3">
+                                    <div class="input-group input-group-outline my-3 @if(strlen($email ?? '') > 0) is-filled @endif">
                                         <label class="form-label">Email</label>
                                         <input wire:model.lazy="email" type="email" class="form-control"  required>
                                     </div>
                                     @error('password')
                                     <p class='text-danger inputerror'>{{ $message }} </p>
                                     @enderror
-                                    <div class="input-group input-group-outline my-3">
+                                    <div class="input-group input-group-outline my-3 @if(strlen($password ?? '') > 0) is-filled @endif">
                                         <label class="form-label">New Password</label>
                                         <input wire:model.lazy="password" type="password" class="form-control" required>
                                     </div>
                                     @error('password_confirmation')
                                     <p class='text-danger inputerror'>{{ $message }} </p>
                                     @enderror
-                                    <div class="input-group input-group-outline my-3">
+                                    <div class="input-group input-group-outline my-3 @if(strlen($passwordConfirmation ?? '') > 0) is-filled @endif">
                                         <label class="form-label">Confirm Password</label>
                                         <input wire:model.lazy="passwordConfirmation" type="password" class="form-control" required>
                                     </div>
@@ -52,17 +52,3 @@
             </div>
         </div>
     </main>
-    @push('js')
-    <script src="{{ asset('assets') }}/js/jquery.min.js"></script>
-    <script>
-        $(function() {
-    
-        var text_val = $(".input-group input").val();
-        if (text_val === "") {
-          $(".input-group").removeClass('is-filled');
-        } else {
-          $(".input-group").addClass('is-filled');
-        }
-    });
-    </script>
-    @endpush

@@ -1,4 +1,4 @@
-<footer class="footer position-absolute bottom-2 py-2 w-100 z-index-1">
+<footer class="footer position-absolute bottom-2 py-2 w-100">
     <div class="container">
         <div class="row align-items-center justify-content-lg-between">
             <div class="col-12 col-md-6 my-auto">
