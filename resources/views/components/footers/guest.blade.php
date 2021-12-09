@@ -1,4 +1,4 @@
-<footer class="footer position-absolute bottom-2 py-2 w-100">
+<footer class="footer position-absolute bottom-2 py-2 w-100 z-index-1">
     <div class="container">
         <div class="row align-items-center justify-content-lg-between">
             <div class="col-12 col-md-6 my-auto">
@@ -9,7 +9,7 @@
                     </script>,
                     made with <i class="fa fa-heart" aria-hidden="true"></i> by
                     <a href="https://www.creative-tim.com" class="font-weight-bold text-white" target="_blank">Creative
-                        Tim & UPDIVISION</a>
+                        Tim </a> & <a href="https://www.updivision.com" class="font-weight-bold text-white" target="_blank">UPDIVISION</a>
                     for a better web.
                 </div>
             </div>
@@ -18,6 +18,9 @@
                     <li class="nav-item">
                         <a href="https://www.creative-tim.com" class="nav-link text-white" target="_blank">Creative
                             Tim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.updivision.com" class="nav-link text-white" target="_blank">UPDIVISION</a>
                     </li>
                     <li class="nav-item">
                         <a href="https://www.creative-tim.com/presentation" class="nav-link text-white"

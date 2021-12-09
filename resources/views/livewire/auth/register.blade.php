@@ -1,5 +1,5 @@
 
-    <div>
+
         <main class="main-content  mt-0">
             <section>
                 <div class="page-header min-vh-100">
@@ -21,21 +21,21 @@
                                     <div class="card-body">
                                         <form wire:submit.prevent ="store">
                                             @error('name')
-                                            <p class='text-danger'>{{ $message }} </p>
+                                            <p class='text-danger inputerror'>{{ $message }} </p>
                                             @enderror
                                             <div class="input-group input-group-outline mb-3">
                                                 <input wire:model.lazy="name" type="text" class="form-control" 
                                                      required placeholder="Name">
                                             </div>
                                             @error('email')
-                                            <p class='text-danger'>{{ $message }} </p>
+                                            <p class='text-danger inputerror'>{{ $message }} </p>
                                             @enderror
                                             <div class="input-group input-group-outline mb-3">
                                                 <input wire:model.lazy="email" type="email"  class="form-control"
                                                      required placeholder="Email">
                                             </div>
                                             @error('password')
-                                            <p class='text-danger'>{{ $message }} </p>
+                                            <p class='text-danger inputerror'>{{ $message }} </p>
                                             @enderror
                                             <div class="input-group input-group-outline mb-3">
                                                 <input wire:model.lazy="password" type="password" class="form-control" required placeholder="Password">
@@ -69,5 +69,4 @@
                 </div>
             </section>
         </main>
-    </div>
 

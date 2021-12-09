@@ -1,14 +1,18 @@
 <x-layouts.base>
     @if (in_array(request()->route()->getName(),['static-sign-in', 'static-sign-up', 'register', 'login','password.forgot','reset-password']))
-    <div class="container position-sticky z-index-sticky top-0">
-        <div class="row">
-            <div class="col-12">
-                <x-navbars.navs.guest></x-navbars.navs.guest>
+        <div class="container position-sticky z-index-sticky top-0">
+            <div class="row">
+                <div class="col-12">
+                    <x-navbars.navs.guest></x-navbars.navs.guest>
+                </div>
             </div>
         </div>
-    </div>
-    {{ $slot }}
-    <x-footers.guest></x-footers.guest>
+        @if (in_array(request()->route()->getName(),[ 'static-sign-up', 'register']))
+          {{ $slot }}         
+        @else
+                {{ $slot }}
+
+        @endif
     @elseif (in_array(request()->route()->getName(),['rtl']))
     {{ $slot }}
     @elseif (in_array(request()->route()->getName(),['virtual-reality']))

@@ -75,7 +75,7 @@
                                 
                                 <div class="mb-3 col-md-6">
                                     @error('user.email')
-                                <p class='text-danger'>{{ $message }} </p>
+                                <p class='text-danger inputerror'>{{ $message }} </p>
                                 @enderror
                                     <label class="form-label">Email address</label>
                                     <input wire:model.lazy="user.email" type="email"  class="form-control border border-2 p-2">
@@ -83,7 +83,7 @@
                                 
                                 <div class="mb-3 col-md-6">
                                     @error('user.name')
-                                <p class='text-danger'>{{ $message }} </p>
+                                <p class='text-danger inputerror'>{{ $message }} </p>
                                 @enderror
                                     <label class="form-label">Name</label>
                                     <input wire:model.lazy="user.name" type="text" class="form-control border border-2 p-2">
@@ -91,7 +91,7 @@
                                
                                 <div class="mb-3 col-md-6">
                                     @error('user.phone')
-                                    <p class='text-danger'>{{ $message }} </p>
+                                    <p class='text-danger inputerror'>{{ $message }} </p>
                                     @enderror
                                     <label class="form-label">Phone</label>
                                     <input wire:model.lazy="user.phone" type="number" class="form-control border border-2 p-2">
@@ -99,7 +99,7 @@
                                 
                                 <div class="mb-3 col-md-6">
                                     @error('user.location')
-                                <p class='text-danger'>{{ $message }} </p>
+                                <p class='text-danger inputerror'>{{ $message }} </p>
                                 @enderror
                                     <label class="form-label">Location</label>
                                     <input wire:model.lazy="user.location" type="text" class="form-control border border-2 p-2">
@@ -107,7 +107,7 @@
                                 
                                 <div class="mb-3 col-md-12">
                                     @error('user.about')
-                                <p class='text-danger'>{{ $message }} </p>
+                                <p class='text-danger inputerror'>{{ $message }} </p>
                                 @enderror
                                     <label for="floatingTextarea2">About</label>
                                     <textarea wire:model.lazy="user.about" class="form-control border border-2 p-2"

@@ -4,6 +4,28 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ .signin-margin{
+  margin-top: 5rem !important;
+}
+.inputerror{
+  font-size: 0.75rem;
+  margin-bottom: 0.30rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+ -webkit-text-fill-color: black;
+ transition: background-color 5000s ease-in-out 0s;
+}
+
 :root {
   --bs-blue: #63B3ED;
   --bs-indigo: #596CFF;

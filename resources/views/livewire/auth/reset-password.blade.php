@@ -14,29 +14,20 @@
                             </div>
                             <div class="card-body">
                                 <form wire:submit.prevent="update" class="text-start">
-                                    @if (Session::has('email'))
-                                    <div class="alert alert-danger alert-dismissible text-white" role="alert">
-                                        <span class="text-sm">{{ Session::get('email') }}</span>
-                                        <button type="button" class="btn-close text-lg py-3 opacity-10"
-                                            data-bs-dismiss="alert" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    @endif
                                     @error('email')
-                                    <p class='text-danger'>{{ $message }} </p>
+                                    <p class='text-danger inputerror'>{{ $message }} </p>
                                     @enderror
                                     <div class="input-group input-group-outline my-3">
                                         <input wire:model.lazy="email" type="email" class="form-control"  required placeholder="Email">
                                     </div>
                                     @error('password')
-                                    <p class='text-danger'>{{ $message }} </p>
+                                    <p class='text-danger inputerror'>{{ $message }} </p>
                                     @enderror
                                     <div class="input-group input-group-outline my-3">
                                         <input wire:model.lazy="password" type="password" class="form-control" required placeholder="New Password">
                                     </div>
                                     @error('password_confirmation')
-                                    <p class='text-danger'>{{ $message }} </p>
+                                    <p class='text-danger inputerror'>{{ $message }} </p>
                                     @enderror
                                     <div class="input-group input-group-outline my-3">
                                         <input wire:model.lazy="passwordConfirmation" type="password" class="form-control" required placeholder="Confirm Password">

@@ -44,7 +44,7 @@
                             @endif
                             <form wire:submit.prevent="show">
                                 @error('email')
-                                <p class='text-danger'>{{ $message }} </p>
+                                <p class='text-danger inputerror'>{{ $message }} </p>
                                 @enderror
                                 <div class="input-group input-group-outline my-3">
                                     <input wire:model.lazy="email" type="email" class="form-control" required
