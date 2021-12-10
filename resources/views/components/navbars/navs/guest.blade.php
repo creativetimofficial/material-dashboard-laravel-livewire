@@ -32,13 +32,13 @@
                 </li>
                 @endauth
                 <li class="nav-item">
-                    <a class="nav-link me-2" href="{{ route(Route::currentRouteName() == 'register' || Route::currentRouteName() =='login' ? 'register' : 'static-sign-up' )}}">
+                    <a class="nav-link me-2" href="{{ in_array(request()->route()->getName(), ['register','login', 'password.forgot','reset-password']) ? 'sign-up' : 'static-sign-up' }}">
                         <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
                         Sign Up
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link me-2" href="{{ route(Route::currentRouteName() == 'login' || Route::currentRouteName() == 'register' ? 'login' : 'static-sign-in' )}}">
+                    <a class="nav-link me-2" href="{{ in_array(request()->route()->getName(), ['register','login', 'password.forgot','reset-password']) ? 'sign-in' : 'static-sign-in' }}">
                         <i class="fas fa-key opacity-6 text-dark me-1"></i>
                         Sign In
                     </a>
