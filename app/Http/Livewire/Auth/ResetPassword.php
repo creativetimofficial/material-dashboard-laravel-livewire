@@ -41,7 +41,7 @@ class ResetPassword extends Component
             ]);
             redirect('sign-in')->with('status', 'Your password has been reset!');
         } else {
-            return back()->with('email', "We can't find a user with that email address.");
+            return back()->with('email', "We can't find any user with that email address.");
         }
     
     }

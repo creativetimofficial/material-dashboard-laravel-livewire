@@ -34,9 +34,6 @@
                             </div>
                             <div class="card-body">
                                 <form wire:submit.prevent='store'>
-                                    @error('email')
-                                    <p class='text-danger inputerror'>{{ $message }} </p>
-                                    @enderror
                                     @if (Session::has('status'))
                                     <div class="alert alert-success alert-dismissible text-white" role="alert">
                                         <span class="text-sm">{{ Session::get('status') }}</span>
@@ -46,19 +43,23 @@
                                         </button>
                                     </div>
                                     @endif
-                                    <div class="input-group input-group-outline mb-3 @if(strlen($email ?? '') > 0) is-filled @endif">
+                                    <div class="input-group input-group-outline mt-3 @if(strlen($email ?? '') > 0) is-filled @endif">
                                         <label class="form-label">Email</label>
-                                        <input wire:model.lazy='email' type="email" class="form-control" required>
+                                        <input wire:model='email' type="email" class="form-control">
+                                    </div>
+                                    @error('email')
+                                    <p class='text-danger inputerror'>{{ $message }} </p>
+                                    @enderror
+
+                                    <div class="input-group input-group-outline mt-3 @if(strlen($password ?? '') > 0) is-filled @endif">
+                                        <label class="form-label">Password</label>
+                                        <input wire:model="password" type="password" class="form-control"
+                                             >
                                     </div>
                                     @error('password')
                                     <p class='text-danger inputerror'>{{ $message }} </p>
                                     @enderror
-                                    <div class="input-group input-group-outline mb-3 @if(strlen($password ?? '') > 0) is-filled @endif">
-                                        <label class="form-label">Password</label>
-                                        <input wire:model.lazy="password" type="password" class="form-control"
-                                             required>
-                                    </div>
-                                    <div class="form-check form-switch d-flex align-items-center mb-3">
+                                    <div class="form-check form-switch d-flex align-items-center my-3">
                                         <input class="form-check-input" type="checkbox" id="rememberMe">
                                         <label class="form-check-label mb-0 ms-2" for="rememberMe">Remember
                                             me</label>
@@ -83,5 +84,6 @@
                     </div>
                 </div>
             </div>
+        <x-footers.guest></x-footers.guest>
     </div>
 </main>

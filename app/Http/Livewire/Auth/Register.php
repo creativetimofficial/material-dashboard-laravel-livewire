@@ -29,11 +29,6 @@ class Register extends Component
         return redirect('/dashboard');
     } 
 
-    public function updated($propertyName){
-
-        $this->validateOnly($propertyName);
-    }
-
     public function render()
     {
         return view('livewire.auth.register');

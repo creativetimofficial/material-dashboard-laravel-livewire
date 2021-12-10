@@ -20,30 +20,33 @@
                                     </div>
                                     <div class="card-body">
                                         <form wire:submit.prevent ="store">
+
+                                            <div class="input-group input-group-outline @if(strlen($name?? '') > 0) is-filled @endif">
+                                                <label class="form-label">Name</label>
+                                                <input wire:model="name" type="text" class="form-control" 
+                                                >
+                                            </div>
                                             @error('name')
                                             <p class='text-danger inputerror'>{{ $message }} </p>
                                             @enderror
-                                            <div class="input-group input-group-outline mb-3 @if(strlen($name?? '') > 0) is-filled @endif">
-                                                <label class="form-label">Name</label>
-                                                <input wire:model.lazy="name" type="text" class="form-control" 
-                                                     required>
+
+                                            <div class="input-group input-group-outline mt-3 @if(strlen($email ?? '') > 0) is-filled @endif">
+                                                <label class="form-label">Email</label>
+                                                <input wire:model="email" type="email"  class="form-control"
+                                                     >
                                             </div>
                                             @error('email')
                                             <p class='text-danger inputerror'>{{ $message }} </p>
                                             @enderror
-                                            <div class="input-group input-group-outline mb-3 @if(strlen($email ?? '') > 0) is-filled @endif">
-                                                <label class="form-label">Email</label>
-                                                <input wire:model.lazy="email" type="email"  class="form-control"
-                                                     required>
+
+                                            <div class="input-group input-group-outline mt-3 @if(strlen($password ?? '') > 0) is-filled @endif">
+                                                <label class="form-label">Password</label>
+                                                <input wire:model="password" type="password" class="form-control" >
                                             </div>
                                             @error('password')
                                             <p class='text-danger inputerror'>{{ $message }} </p>
                                             @enderror
-                                            <div class="input-group input-group-outline mb-3 @if(strlen($password ?? '') > 0) is-filled @endif">
-                                                <label class="form-label">Password</label>
-                                                <input wire:model.lazy="password" type="password" class="form-control" required>
-                                            </div>
-                                            <div class="form-check form-check-info text-start ps-0">
+                                            <div class="form-check form-check-info text-start ps-0 mt-3">
                                                 <input class="form-check-input" type="checkbox" value=""
                                                     id="flexCheckDefault" checked>
                                                 <label class="form-check-label" for="flexCheckDefault">

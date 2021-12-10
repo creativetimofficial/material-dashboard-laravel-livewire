@@ -7,13 +7,7 @@
                 </div>
             </div>
         </div>
-        @if (in_array(request()->route()->getName(),[ 'static-sign-up', 'register']))
-          {{ $slot }}
-            
-        @else
-                {{ $slot }}
-        <x-footers.guest></x-footers.guest>
-        @endif
+            {{ $slot }}
     @elseif (in_array(request()->route()->getName(),['rtl']))
     {{ $slot }}
     @elseif (in_array(request()->route()->getName(),['virtual-reality']))

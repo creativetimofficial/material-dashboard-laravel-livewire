@@ -5,12 +5,28 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+ @media (max-width:500px){
+
+  .bottom-footer {
+    bottom: -9% !important;
+  }
+
+  .page-header{
+    overflow:scroll !important;
+  }
+ }
+
+ .bottom-footer {
+  bottom: -3%
+}
+
  .signin-margin{
-  margin-top: 5rem !important;
+  margin-top: 6rem !important;
+  margin-bottom: 5rem !important;
 }
 .inputerror{
   font-size: 0.75rem;
-  margin-bottom: 0.30rem;
+  margin-top: 0.30rem;
 }
 
 input:-webkit-autofill,

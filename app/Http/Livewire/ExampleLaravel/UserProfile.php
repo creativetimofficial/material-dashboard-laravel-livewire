@@ -32,6 +32,18 @@ class UserProfile extends Component
     public function update()
     {
         $this->validate();
+
+        if (env('IS_DEMO') && $this->user->id == 1){
+            
+            if( auth()->user()->email == $this->user->email ){
+                
+                $this->user->save();
+                return back()->withStatus('Profile successfully updated.');
+            }
+            
+            return back()->with('demo', "You are in a demo version, you can't change the admin email." );
+        };
+
         $this->user->save();
         return back()->withStatus('Profile successfully updated.');
     
