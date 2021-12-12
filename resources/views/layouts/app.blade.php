@@ -7,7 +7,18 @@
                 </div>
             </div>
         </div>
+        @if (in_array(request()->route()->getName(),['static-sign-in', 'login','password.forgot','reset-password']))
+        <main class="main-content  mt-0">
+            <div class="page-header page-header-bg align-items-start min-vh-100">
+                    <span class="mask bg-gradient-dark opacity-6"></span>
             {{ $slot }}
+            <x-footers.guest></x-footers.guest>
+             </div>
+        </main>
+        @else
+        {{ $slot }}
+        @endif
+
     @elseif (in_array(request()->route()->getName(),['rtl']))
     {{ $slot }}
     @elseif (in_array(request()->route()->getName(),['virtual-reality']))
