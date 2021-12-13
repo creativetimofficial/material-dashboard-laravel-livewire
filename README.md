@@ -46,7 +46,7 @@ And Laravel: https://laravel.com/docs/8.x/installation
 
 ## Installation
 1. Unzip the downloaded archive
-2. Copy and paste **material-dashboard-laravel-free** folder in your **projects** folder. Rename the folder to your project's name
+2. Copy and paste **material-dashboard-2-free-livewire-master** folder in your **projects** folder. Rename the folder to your project's name
 3. In your terminal run `composer install`
 4. Copy `.env.example` to `.env` and updated the configurations (mainly the database configuration)
 5. In your terminal run `php artisan key:generate`
