@@ -46,7 +46,7 @@
             </ul>
             <ul class="navbar-nav d-lg-block d-none">
                 <li class="nav-item">
-                    <a href="https://www.creative-tim.com/product/material-dashboard-laravel"
+                    <a href="https://www.creative-tim.com/product/material-dashboard-laravel-livewire"
                         class="btn btn-sm mb-0 me-1 bg-gradient-dark" target="_blank">Free download</a>
                 </li>
             </ul>

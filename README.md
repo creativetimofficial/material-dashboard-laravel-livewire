@@ -1,13 +1,13 @@
-# [Material Dashboard 2 Laravel - Free]()
+# [Material Dashboard 2 Laravel Livewire - Free](https://material-dashboard-pro-laravel-livewire.creative-tim.com)
 
 ![version](https://img.shields.io/badge/version-3.0.0-blue.svg) 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
-[![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-dashboard-laravel.svg)]() 
-[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-dashboard-laravel.svg)]()
+[![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-dashboard-laravel-livewire.svg)](https://github.com/creativetimofficial/material-dashboard-laravel-livewire/issues?q=is%3Aopen+is%3Aissue) 
+[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-dashboard-laravel-livewire.svg)](https://github.com/creativetimofficial/material-dashboard-laravel-livewire/issues?q=is%3Aissue+is%3Aclosed)
 
 
 *Frontend version*: Material Dashboard v3.0.0. More info at https://www.creative-tim.com/product/material-dashboard
-[ <img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/dashboard.PNG?raw=true" width="100%" />](https://material-dashboard-laravel.creative-tim.com/dashboard)
+[ <img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/dashboard.PNG?raw=true" width="100%" />](https://material-dashboard-laravel-livewire.creative-tim.com/dashboard)
 
 Speed up your web development with the Bootstrap 5 Admin Dashboard built for Laravel Framework 8.x and up.
 
@@ -62,25 +62,25 @@ Besides the dashboard, the auth pages, the billing and table pages, there is als
 
 ## Versions
 [<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html)
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />](https://material-dashboard-laravel.creative-tim.com/)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />](https://material-dashboard-laravel-livewire.creative-tim.com/)
 
 | HTML | Laravel |
 | --- | --- |
-| [![HTML](https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/material-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard) | [![Laravel](https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/dashboard.PNG?raw=true)](https://www.creative-tim.com/product/material-dashboard-laravel)  | 
+| [![HTML](https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/material-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard) | [![Laravel](https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/dashboard.PNG?raw=true)](https://www.creative-tim.com/product/material-dashboard-laravel-livewire)  | 
 
 
 ## Demo
 | Register | Login | Dashboard |
 | --- | --- | ---  |
-| [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/register.png" width="322" />](https://material-dashboard-laravel.creative-tim.com/sign-up) | [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/login.png" width="322" />](https://material-dashboard-laravel.creative-tim.com/sign-in)  | [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/dashboard.PNG" width="322" />](https://material-dashboard-laravel.creative-tim.com/dashboard)
+| [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/register.png" width="322" />](https://material-dashboard-laravel-livewire.creative-tim.com/sign-up) | [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/login.png" width="322" />](https://material-dashboard-laravel-livewire.creative-tim.com/sign-in)  | [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/dashboard.PNG" width="322" />](https://material-dashboard-laravel-livewire.creative-tim.com/dashboard)
 
 | Forgot Password Page | Reset Password Page | Profile Page  |
 | --- | --- | ---  |
-| [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/forgot-password.png" width="322" />](https://material-dashboard-laravel.creative-tim.com/verify)  | [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/reset-password.png" width="322" />](https://material-dashboard-laravel.creative-tim.com/sign-in) | [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/profile.png" width="322" />](https://material-dashboard-laravel.creative-tim.com/user-profile)
-[View More](https://material-dashboard-laravel.creative-tim.com/dashboard)
+| [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/forgot-password.png" width="322" />](https://material-dashboard-laravel-livewire.creative-tim.com/verify)  | [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/reset-password.png" width="322" />](https://material-dashboard-laravel-livewire.creative-tim.com/sign-in) | [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/profile.png" width="322" />](https://material-dashboard-laravel-livewire.creative-tim.com/user-profile)
+[View More](https://material-dashboard-laravel-livewire.creative-tim.com/dashboard)
 
 ## Documentation
-The documentation for the Material Dashboard Laravel is hosted at our [website](https://material-dashboard-laravel.creative-tim.com/documentation/getting-started/installation.html).
+The documentation for the Material Dashboard Laravel is hosted at our [website](https://material-dashboard-laravel-livewire.creative-tim.com/documentation/getting-started/installation.html).
 
 ### Login
 If you are not logged in you can only access this page or the Sign Up page. The default url takes you to the login page where you use the default credentials **admin@material.com** with the password **secret**. Logging in is possible only with already existing credentials. For this to work you should have run the migrations. 
@@ -266,7 +266,7 @@ At present, we officially aim to support the last two versions of the following 
 ## Reporting Issues
 We use GitHub Issues as the official bug tracker for the Material Dashboard. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Material Dashboard. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/material-dashboard-laravel).
+1. Make sure that you are using the latest version of the Material Dashboard. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/material-dashboard-laravel-livewire).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
