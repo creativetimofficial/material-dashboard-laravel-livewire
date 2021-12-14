@@ -7,7 +7,7 @@
 
 
 *Frontend version*: Material Dashboard v3.0.0. More info at https://www.creative-tim.com/product/material-dashboard
-[ <img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/dashboard.PNG?raw=true" width="100%" />](https://material-dashboard-laravel-livewire.creative-tim.com/dashboard)
+[ <img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/dashboard.PNG?raw=true" width="100%" />](https://material-dashboard-laravel-livewire.creative-tim.com)
 
 Speed up your web development with the Bootstrap 5 Admin Dashboard built for Laravel Framework 8.x and up.
 
