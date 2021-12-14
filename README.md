@@ -76,7 +76,7 @@ Besides the dashboard, the auth pages, the billing and table pages, there is als
 
 | Forgot Password Page | Reset Password Page | Profile Page  |
 | --- | --- | ---  |
-| [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/forgot-password.png" width="322" />](https://material-dashboard-laravel-livewire.creative-tim.com/verify)  | [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/reset-password.png" width="322" />](https://material-dashboard-laravel-livewire.creative-tim.com/sign-in) | [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/profile.png" width="322" />](https://material-dashboard-laravel-livewire.creative-tim.com/user-profile)
+| [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/forgot-password.png" width="322" />](https://material-dashboard-laravel-livewire.creative-tim.com/forgot-password)  | [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/reset-password.png" width="322" />](https://material-dashboard-laravel-livewire.creative-tim.com/sign-in) | [<img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/profile.png" width="322" />](https://material-dashboard-laravel-livewire.creative-tim.com/user-profile)
 [View More](https://material-dashboard-laravel-livewire.creative-tim.com/dashboard)
 
 ## Documentation
