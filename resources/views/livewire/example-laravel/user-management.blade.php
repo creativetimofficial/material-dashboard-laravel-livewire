@@ -10,8 +10,8 @@
                                 <h6 class="text-white mx-3"><strong> Add, Edit, Delete features are not
                                         functional!</strong> This is a<strong> PRO</strong> feature! Click
                                     <strong><a
-                                            href="https://www.creative-tim.com/product/material-dashboard-pro-laravel"
-                                            target="_blank" class="text-white">here </a></strong>to see
+                                            href="https://www.creative-tim.com/product/material-dashboard-pro-laravel-livewire"
+                                            target="_blank" class="text-white"><u>here</u> </a></strong>to see
                                     the PRO product!</h6>
                             </div>
                         </div>
