@@ -7,9 +7,9 @@
 
 
 *Frontend version*: Material Dashboard v3.0.0. More info at https://www.creative-tim.com/product/material-dashboard
-[ <img src="https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/dashboard.PNG?raw=true" width="100%" />](https://material-dashboard-laravel-livewire.creative-tim.com)
+[ <img src="https://s3.amazonaws.com/creativetim_bucket/products/600/original/material-dashboard-laravel-livewire.jpg?raw=true" width="100%" />](https://material-dashboard-laravel-livewire.creative-tim.com)
 
-Speed up your web development with the Bootstrap 5 Admin Dashboard built for Laravel Framework 8.x and up.
+Speed up your web development with the Bootstrap 5 Admin Dashboard built for Laravel Framework 9.x and up.
 
 ## Table of Contents
 * [Prerequisites](#prerequisites)
@@ -41,7 +41,7 @@ If you don't already have an Apache local environment with PHP and MySQL, use on
  - Mac: https://wpshout.com/quick-guides/how-to-install-mamp-on-your-mac/
 
 Also, you will need to install Composer: https://getcomposer.org/doc/00-intro.md   
-And Laravel: https://laravel.com/docs/8.x/installation
+And Laravel: https://laravel.com/docs/9.x/installation
 
 
 ## Installation
@@ -64,9 +64,13 @@ Besides the dashboard, the auth pages, the billing and table pages, there is als
 [<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html)
 [<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />](https://material-dashboard-laravel-livewire.creative-tim.com/)
 
-| HTML | Laravel |
+| HTML | Laravel Livewire |
 | --- | --- |
-| [![HTML](https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/material-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard) | [![Laravel](https://github.com/AlexVlad95/material-2-free-livewire/blob/master/screens/dashboard.PNG?raw=true)](https://www.creative-tim.com/product/material-dashboard-laravel-livewire)  | 
+| [![HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/thumb/material-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard) | [![Laravel](https://s3.amazonaws.com/creativetim_bucket/products/600/thumb/material-dashboard-laravel-livewire.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-laravel-livewire)  |
+
+| Vue | React |
+| --- | --- |
+| [![Vue](https://s3.amazonaws.com/creativetim_bucket/products/596/thumb/vue-material-dashboard-2.jpg?raw=true)](https://www.creative-tim.com/product/vue-material-dashboard-2) | [![React](https://s3.amazonaws.com/creativetim_bucket/products/71/thumb/material-dashboard-react.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-react)  | 
 
 
 ## Demo
@@ -272,7 +276,7 @@ We use GitHub Issues as the official bug tracker for the Material Dashboard. Her
 
 
 ## Licensing
-- Copyright 2021 [Creative Tim](https://www.creative-tim.com?ref=readme-sudl)
+- Copyright 2022 [Creative Tim](https://www.creative-tim.com?ref=readme-sudl)
 - Creative Tim [license](https://www.creative-tim.com/license?ref=readme-sudl)
 
 ## Useful Links
