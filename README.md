@@ -276,42 +276,42 @@ We use GitHub Issues as the official bug tracker for the Material Dashboard. Her
 
 
 ## Licensing
-- Copyright 2022 [Creative Tim](https://www.creative-tim.com?ref=readme-sudl)
-- Creative Tim [license](https://www.creative-tim.com/license?ref=readme-sudl)
+- Copyright 2022 [Creative Tim](https://www.creative-tim.com?ref=readme-md2ll)
+- Creative Tim [license](https://www.creative-tim.com/license?ref=readme-md2ll)
 
 ## Useful Links
 - [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
 - [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
 - [Blog Creative Tim](http://blog.creative-tim.com/)
 - [Free Products](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
-- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=sudl-readme) from Creative Tim
-- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=sudl-readme) from Creative Tim
-- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=sudl-readme) from Creative Tim
-- [More products](https://www.creative-tim.com/bootstrap-themes?ref=sudl-readme) from Creative Tim
-- Check our Bundles [here](https://www.creative-tim.com/bundles??ref=sudl-readme)
+- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=md2ll-readme) from Creative Tim
+- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=md2ll-readme) from Creative Tim
+- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=md2ll-readme) from Creative Tim
+- [More products](https://www.creative-tim.com/bootstrap-themes?ref=md2ll-readme) from Creative Tim
+- Check our Bundles [here](https://www.creative-tim.com/bundles??ref=md2ll-readme)
 
 ### Social Media
 
 ### Creative Tim
-Twitter: <https://twitter.com/CreativeTim?ref=sudl-readme>
+Twitter: <https://twitter.com/CreativeTim?ref=md2ll-readme>
 
-Facebook: <https://www.facebook.com/CreativeTim?ref=sudl-readme>
+Facebook: <https://www.facebook.com/CreativeTim?ref=md2ll-readme>
 
-Dribbble: <https://dribbble.com/creativetim?ref=sudl-readme>
+Dribbble: <https://dribbble.com/creativetim?ref=md2ll-readme>
 
-Instagram: <https://www.instagram.com/CreativeTimOfficial?ref=sudl-readme>
+Instagram: <https://www.instagram.com/CreativeTimOfficial?ref=md2ll-readme>
 
 ### Updivision:
 
-Twitter: <https://twitter.com/updivision?ref=sudl-readme>
+Twitter: <https://twitter.com/updivision?ref=md2ll-readme>
 
-Facebook: <https://www.facebook.com/updivision?ref=sudl-readme>
+Facebook: <https://www.facebook.com/updivision?ref=md2ll-readme>
 
-Linkedin: <https://www.linkedin.com/company/updivision?ref=sudl-readme>
+Linkedin: <https://www.linkedin.com/company/updivision?ref=md2ll-readme>
 
-Updivision Blog: <https://updivision.com/blog/?ref=sudl-readme>
+Updivision Blog: <https://updivision.com/blog/?ref=md2ll-readme>
 
 ## Credits
 
-- [Creative Tim](https://creative-tim.com/?ref=sudl-readme)
+- [Creative Tim](https://creative-tim.com/?ref=md2ll-readme)
 - [UPDIVISION](https://updivision.com)
