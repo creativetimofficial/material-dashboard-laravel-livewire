@@ -6,7 +6,7 @@
             aria-hidden="true" id="iconSidenav"></i>
             <a class="navbar-brand m-0 d-flex text-wrap align-items-center" href=" {{ route('dashboard') }} ">
                 <img src="{{ asset('assets') }}/img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
-                <span class="ms-1 font-weight-bold text-white">Material Dashboard 2 Laravel Livewire</span>
+                <span class="ms-2 font-weight-bold text-white">Material Dashboard 2 Laravel Livewire</span>
             </a>
     </div>
     <hr class="horizontal light mt-0 mb-2">
