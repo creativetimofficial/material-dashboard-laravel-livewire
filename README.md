@@ -1,4 +1,4 @@
-# [Material Dashboard 2 Laravel Livewire - Free](https://material-dashboard-pro-laravel-livewire.creative-tim.com)
+# [Material Dashboard 2 Laravel Livewire](https://material-dashboard-laravel-livewire.creative-tim.com)
 
 ![version](https://img.shields.io/badge/version-3.0.0-blue.svg) 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
