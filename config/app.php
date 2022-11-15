@@ -27,6 +27,7 @@ return [
     */
 
     'env' => env('APP_ENV', 'production'),
+    'scheduled' => env('SCHEDULED_TIME', 15),
 
     /*
     |--------------------------------------------------------------------------
