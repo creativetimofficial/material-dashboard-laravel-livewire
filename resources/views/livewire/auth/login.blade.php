@@ -83,8 +83,8 @@
                 </div>
             </div>
             @endif
-            <h4 class="mb-2">Welcome to Materialize! 👋</h4>
-            <p class="mb-4">Please sign-in to your account and start the adventure</p>
+            <h4 class="mb-2">¡Bienvenidos a nuestra app! 👋</h4>
+            <p class="mb-4">Por favor, ingresa tu usuario y contraseña para avanzar</p>
 
             <form wire:submit.prevent='store'  class="mb-3">
               <div class="form-floating form-floating-outline mb-3">
@@ -93,13 +93,13 @@
                   class="form-control  @error('email') is-invalid @enderror"
                   id="email"
                   wire:model="email"
-                  placeholder="Enter your email or username"
+                  placeholder="Ingresa tu correo electrónico"
                   value="{{ old('email') }}"
                   autofocus />
                   @error('email')
                   <p class='text-danger inputerror'>{{ $message }} </p>
                   @enderror
-                <label for="email">Email or Username</label>
+                <label for="email">Correo electrónico</label>
               </div>
               <div class="mb-3">
                 <div class="form-password-toggle">
@@ -112,9 +112,7 @@
                         wire:model="password"
                         placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                         aria-describedby="password" />
-
-                      <label for="password">Password</label>
-
+                      <label for="password">Contraseña</label>
                     </div>
 
                     <span class="input-group-text cursor-pointer"><i class="mdi mdi-eye-off-outline"></i></span>
@@ -130,7 +128,7 @@
                   <label class="form-check-label" for="remember-me"> Remember Me </label>
                 </div>
                  <a href="{{ url('forgot-password') }}"  class="float-end mb-1">
-                  <span>Forgot Password?</span>
+                  <span>¿Olvidaste la contraseña?</span>
                 </a>
               </div>
               <div class="mb-3">
@@ -139,9 +137,9 @@
             </form>
 
             <p class="text-center">
-              <span>New on our platform?</span>
+              <span>¿Nuevo(a) en nuestra plataforma?</span>
               <a href="{{ route('register') }}">
-                <span>Create an account</span>
+                <span>¡Crea tu cuenta!</span>
               </a>
             </p>
 

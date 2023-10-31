@@ -44,12 +44,12 @@ class ForgotPassword extends Component
 
             $this->notify(new ResetPassword($user->id));
 
-            return back()->with('status', "We have emailed your password reset link!");
+            return back()->with('status', "¡Le hemos enviado por correo electrónico el enlace para restablecer su contraseña.!");
 
 
         } else {
 
-            return back()->with('email', "We can't find any user with that email address.");
+            return back()->with('email', "No podemos encontrar ningún usuario con esa dirección de correo electrónico.");
 
         }
     }

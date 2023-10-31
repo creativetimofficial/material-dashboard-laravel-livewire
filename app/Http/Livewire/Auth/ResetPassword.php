@@ -40,9 +40,9 @@ class ResetPassword extends Component
             $existingUser->update([
                 'password' => $this->password
             ]);
-            redirect('sign-in')->with('status', 'Your password has been reset!');
+            redirect('sign-in')->with('status', '¡Tu contraseña ha sido reiniciada satisfactoriamente!');
         } else {
-            return back()->with('email', "We can't find any user with that email address.");
+            return back()->with('email', "No podemos encontrar ningún usuario con esa dirección de correo electrónico.");
         }
 
     }

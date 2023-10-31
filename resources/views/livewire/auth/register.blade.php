@@ -92,31 +92,49 @@
                   @enderror
                 <label for="email">Email</label>
               </div>
-              <div class="form-floating form-floating-outline mb-3
-              @if(strlen($password?? '') > 0) is-filled @endif">
-                <input
-                type="password"
-                class="form-control  @error('password') is-invalid @enderror"
-                id="password"
-                wire:model="password"
-                placeholder="***********************" />
-                 @error('password')
-                  <p class='text-danger inputerror'>{{ $message }} </p>
-                  @enderror
-                <label for="password">Contraseña</label>
+              <div class="mb-3">
+                <div class="form-password-toggle
+                @if(strlen($password?? '') > 0) is-filled @endif">
+                  <div class="input-group input-group-merge">
+                    <div class="form-floating form-floating-outline">
+                      <input
+                        type="password"
+                        id="password"
+                        class="form-control  @error('password') is-invalid @enderror"
+                        wire:model="password"
+                        placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                        aria-describedby="password" />
+                      <label for="password">Contraseña</label>
+                    </div>
+
+                    <span class="input-group-text cursor-pointer"><i class="mdi mdi-eye-off-outline"></i></span>
+                  </div>
+                  @error('password')
+                        <p class='text-danger inputerror'>{{ $message }} </p>
+                 @enderror
+                </div>
               </div>
-              <div class="form-floating form-floating-outline mb-3
-              @if(strlen($password?? '') > 0) is-filled @endif">
-                <input
-                type="password"
-                class="form-control  @error('password_confirmation') is-invalid @enderror"
-                id="password_confirmation"
-                wire:model="password_confirmation"
-                placeholder="***********************" />
-                 @error('password_confirmation')
-                  <p class='text-danger inputerror'>{{ $message }} </p>
-                  @enderror
-                <label for="password_confirmation">Confirmación de Contraseña</label>
+              <div class="mb-3">
+                <div class="form-password-toggle
+                @if(strlen($password?? '') > 0) is-filled @endif">
+                  <div class="input-group input-group-merge">
+                    <div class="form-floating form-floating-outline">
+                      <input
+                        type="password"
+                        id="password_confirmation"
+                        class="form-control  @error('password_confirmation') is-invalid @enderror"
+                        wire:model="password_confirmation"
+                        placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                        aria-describedby="password_confirmation" />
+                      <label for="password_confirmation">Confirmación de la contraseña</label>
+                    </div>
+
+                    <span class="input-group-text cursor-pointer"><i class="mdi mdi-eye-off-outline"></i></span>
+                  </div>
+                  @error('password_confirmation')
+                        <p class='text-danger inputerror'>{{ $message }} </p>
+                 @enderror
+                </div>
               </div>
 
 
@@ -124,9 +142,9 @@
             </form>
 
             <p class="text-center">
-              <span>Already have an account?</span>
-              <a href="auth-login-basic.html">
-                <span>Sign in instead</span>
+              <span>¿Ya posees cuenta?</span>
+              <a href="{{ url('sign-in') }}">
+                <span>Inicia sesión en su lugar</span>
               </a>
             </p>
 

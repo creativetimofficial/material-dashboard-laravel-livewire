@@ -81,8 +81,8 @@
                 </div>
             </div>
             @endif
-            <h4 class="mb-2">Reset Password 🔒</h4>
-            <p class="mb-4">Your new password must be different from previously used passwords</p>
+            <h4 class="mb-2">Reinicio de contraeña 🔒</h4>
+            <p class="mb-4">Su nueva contraseña debe ser diferente de las contraseñas utilizadas anteriormente</p>
             <form class="mb-3" wire:submit.prevent="update">
               <div class="mb-3 form-password-toggle">
                 <div class="input-group input-group-merge">
@@ -111,7 +111,7 @@
                       wire:model="password"
                       placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                       aria-describedby="password" />
-                    <label for="password">New Password</label>
+                    <label for="password">Nueva contraseña</label>
                   </div>
                   <span class="input-group-text cursor-pointer"><i class="mdi mdi-eye-off-outline"></i></span>
                 </div>
@@ -129,7 +129,7 @@
                       wire:model="passwordConfirmation"
                       placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                       aria-describedby="password" />
-                    <label for="confirm-password">Confirm Password</label>
+                    <label for="confirm-password">Confirmación de contraseña</label>
                   </div>
                   <span class="input-group-text cursor-pointer"><i class="mdi mdi-eye-off-outline"></i></span>
                 </div>

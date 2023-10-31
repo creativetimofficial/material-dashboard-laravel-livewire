@@ -102,10 +102,12 @@
                 <div class="text-center">
                     <button type="submit" class="btn btn-primary d-grid w-100">Enviar link para el reinicio</button>
                 </div>
-                <p class="mt-4 text-sm text-center">
-                    ¿No tienes cuenta?
-                    <a href="{{ route('register') }}" class="text-primary text-gradient font-weight-bold">Regístrate</a>
-                </p>
+                <p class="text-center mt-2">
+                    <span>¿Ya posees cuenta?</span>
+                    <a href="{{ url('sign-in') }}">
+                      <span>Inicia sesión en su lugar</span>
+                    </a>
+                  </p>
             </form>
         </div>
         </div>
