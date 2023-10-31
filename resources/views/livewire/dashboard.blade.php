@@ -1,814 +1,731 @@
+@push('styles')
+<link rel="stylesheet" href="/assets/vendor/libs/apex-charts/apex-charts.css" />
+<link rel="stylesheet" href="/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
+<link rel="stylesheet" href="/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
+<link rel="stylesheet" href="/assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" />
+<link rel="stylesheet" href="/assets/vendor/css/pages/app-logistics-dashboard.css" />
+@endpush
+
 <div>
-      <!-- Navbar -->
-      <!-- End Navbar -->
-      <div class="container-fluid py-4">
-          <div class="row">
-              <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                  <div class="card">
-                      <div class="card-header p-3 pt-2">
-                          <div
-                              class="icon icon-lg icon-shape bg-gradient-dark shadow-dark text-center border-radius-xl mt-n4 position-absolute">
-                              <i class="material-icons opacity-10">weekend</i>
-                          </div>
-                          <div class="text-end pt-1">
-                              <p class="text-sm mb-0 text-capitalize">Today's Money</p>
-                              <h4 class="mb-0">$53k</h4>
-                          </div>
-                      </div>
-                      <hr class="dark horizontal my-0">
-                      <div class="card-footer p-3">
-                          <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+55% </span>than
-                              lask week</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                  <div class="card">
-                      <div class="card-header p-3 pt-2">
-                          <div
-                              class="icon icon-lg icon-shape bg-gradient-primary shadow-primary text-center border-radius-xl mt-n4 position-absolute">
-                              <i class="material-icons opacity-10">person</i>
-                          </div>
-                          <div class="text-end pt-1">
-                              <p class="text-sm mb-0 text-capitalize">Today's Users</p>
-                              <h4 class="mb-0">2,300</h4>
-                          </div>
-                      </div>
-                      <hr class="dark horizontal my-0">
-                      <div class="card-footer p-3">
-                          <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+3% </span>than
-                              lask month</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-                  <div class="card">
-                      <div class="card-header p-3 pt-2">
-                          <div
-                              class="icon icon-lg icon-shape bg-gradient-success shadow-success text-center border-radius-xl mt-n4 position-absolute">
-                              <i class="material-icons opacity-10">person</i>
-                          </div>
-                          <div class="text-end pt-1">
-                              <p class="text-sm mb-0 text-capitalize">New Clients</p>
-                              <h4 class="mb-0">3,462</h4>
-                          </div>
-                      </div>
-                      <hr class="dark horizontal my-0">
-                      <div class="card-footer p-3">
-                          <p class="mb-0"><span class="text-danger text-sm font-weight-bolder">-2%</span> than
-                              yesterday</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-xl-3 col-sm-6">
-                  <div class="card">
-                      <div class="card-header p-3 pt-2">
-                          <div
-                              class="icon icon-lg icon-shape bg-gradient-info shadow-info text-center border-radius-xl mt-n4 position-absolute">
-                              <i class="material-icons opacity-10">weekend</i>
-                          </div>
-                          <div class="text-end pt-1">
-                              <p class="text-sm mb-0 text-capitalize">Sales</p>
-                              <h4 class="mb-0">$103,430</h4>
-                          </div>
-                      </div>
-                      <hr class="dark horizontal my-0">
-                      <div class="card-footer p-3">
-                          <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+5% </span>than
-                              yesterday</p>
-                      </div>
-                  </div>
-              </div>
+  <!-- Card Border Shadow -->
+  <div class="row">
+    <div class="col-sm-6 col-lg-3 mb-4">
+      <div class="card card-border-shadow-primary h-100">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2 pb-1">
+            <div class="avatar me-2">
+              <span class="avatar-initial rounded bg-label-primary"
+                ><i class="mdi mdi-bus-school mdi-20px"></i
+              ></span>
+            </div>
+            <h4 class="ms-1 mb-0 display-6">42</h4>
           </div>
-          <div class="row mt-4">
-              <div class="col-lg-4 col-md-6 mt-4 mb-4">
-                  <div class="card z-index-2 ">
-                      <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-                          <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
-                              <div class="chart">
-                                  <canvas id="chart-bars" class="chart-canvas" height="170"></canvas>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card-body">
-                          <h6 class="mb-0 ">Website Views</h6>
-                          <p class="text-sm ">Last Campaign Performance</p>
-                          <hr class="dark horizontal">
-                          <div class="d-flex ">
-                              <i class="material-icons text-sm my-auto me-1">schedule</i>
-                              <p class="mb-0 text-sm"> campaign sent 2 days ago </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 mt-4 mb-4">
-                  <div class="card z-index-2  ">
-                      <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-                          <div class="bg-gradient-success shadow-success border-radius-lg py-3 pe-1">
-                              <div class="chart">
-                                  <canvas id="chart-line" class="chart-canvas" height="170"></canvas>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card-body">
-                          <h6 class="mb-0 "> Daily Sales </h6>
-                          <p class="text-sm "> (<span class="font-weight-bolder">+15%</span>) increase in today
-                              sales. </p>
-                          <hr class="dark horizontal">
-                          <div class="d-flex ">
-                              <i class="material-icons text-sm my-auto me-1">schedule</i>
-                              <p class="mb-0 text-sm"> updated 4 min ago </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 mt-4 mb-3">
-                  <div class="card z-index-2 ">
-                      <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-                          <div class="bg-gradient-dark shadow-dark border-radius-lg py-3 pe-1">
-                              <div class="chart">
-                                  <canvas id="chart-line-tasks" class="chart-canvas" height="170"></canvas>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card-body">
-                          <h6 class="mb-0 ">Completed Tasks</h6>
-                          <p class="text-sm ">Last Campaign Performance</p>
-                          <hr class="dark horizontal">
-                          <div class="d-flex ">
-                              <i class="material-icons text-sm my-auto me-1">schedule</i>
-                              <p class="mb-0 text-sm">just updated</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="row mb-4">
-              <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
-                  <div class="card">
-                      <div class="card-header pb-0">
-                          <div class="row">
-                              <div class="col-lg-6 col-7">
-                                  <h6>Projects</h6>
-                                  <p class="text-sm mb-0">
-                                      <i class="fa fa-check text-info" aria-hidden="true"></i>
-                                      <span class="font-weight-bold ms-1">30 done</span> this month
-                                  </p>
-                              </div>
-                              <div class="col-lg-6 col-5 my-auto text-end">
-                                  <div class="dropdown float-lg-end pe-4">
-                                      <a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown"
-                                          aria-expanded="false">
-                                          <i class="fa fa-ellipsis-v text-secondary"></i>
-                                      </a>
-                                      <ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5"
-                                          aria-labelledby="dropdownTable">
-                                          <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a>
-                                          </li>
-                                          <li><a class="dropdown-item border-radius-md" href="javascript:;">Another
-                                                  action</a></li>
-                                          <li><a class="dropdown-item border-radius-md" href="javascript:;">Something
-                                                  else here</a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card-body px-0 pb-2">
-                          <div class="table-responsive">
-                              <table class="table align-items-center mb-0">
-                                  <thead>
-                                      <tr>
-                                          <th
-                                              class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                              Companies</th>
-                                          <th
-                                              class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                              Members</th>
-                                          <th
-                                              class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                              Budget</th>
-                                          <th
-                                              class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                              Completion</th>
-                                      </tr>
-                                  </thead>
-                                  <tbody>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex px-2 py-1">
-                                                  <div>
-                                                      <img src="{{ asset('assets') }}/img/small-logos/logo-xd.svg"
-                                                          class="avatar avatar-sm me-3" alt="xd">
-                                                  </div>
-                                                  <div class="d-flex flex-column justify-content-center">
-                                                      <h6 class="mb-0 text-sm">Material XD Version</h6>
-                                                  </div>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="avatar-group mt-2">
-                                                  <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                                      data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                      title="Ryan Tompson">
-                                                      <img src="{{ asset('assets') }}/img/team-1.jpg" alt="team1">
-                                                  </a>
-                                                  <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                                      data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                      title="Romina Hadid">
-                                                      <img src="{{ asset('assets') }}/img/team-2.jpg" alt="team2">
-                                                  </a>
-                                                  <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                                      data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                      title="Alexander Smith">
-                                                      <img src="{{ asset('assets') }}/img/team-3.jpg" alt="team3">
-                                                  </a>
-                                                  <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                                      data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                      title="Jessica Doe">
-                                                      <img src="{{ asset('assets') }}/img/team-4.jpg" alt="team4">
-                                                  </a>
-                                              </div>
-                                          </td>
-                                          <td class="align-middle text-center text-sm">
-                                              <span class="text-xs font-weight-bold"> $14,000 </span>
-                                          </td>
-                                          <td class="align-middle">
-                                              <div class="progress-wrapper w-75 mx-auto">
-                                                  <div class="progress-info">
-                                                      <div class="progress-percentage">
-                                                          <span class="text-xs font-weight-bold">60%</span>
-                                                      </div>
-                                                  </div>
-                                                  <div class="progress">
-                                                      <div class="progress-bar bg-gradient-info w-60"
-                                                          role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                                          aria-valuemax="100"></div>
-                                                  </div>
-                                              </div>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex px-2 py-1">
-                                                  <div>
-                                                      <img src="{{ asset('assets') }}/img/small-logos/logo-atlassian.svg"
-                                                          class="avatar avatar-sm me-3" alt="atlassian">
-                                                  </div>
-                                                  <div class="d-flex flex-column justify-content-center">
-                                                      <h6 class="mb-0 text-sm">Add Progress Track</h6>
-                                                  </div>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="avatar-group mt-2">
-                                                  <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                                      data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                      title="Romina Hadid">
-                                                      <img src="{{ asset('assets') }}/img/team-2.jpg" alt="team5">
-                                                  </a>
-                                                  <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                                      data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                      title="Jessica Doe">
-                                                      <img src="{{ asset('assets') }}/img/team-4.jpg" alt="team6">
-                                                  </a>
-                                              </div>
-                                          </td>
-                                          <td class="align-middle text-center text-sm">
-                                              <span class="text-xs font-weight-bold"> $3,000 </span>
-                                          </td>
-                                          <td class="align-middle">
-                                              <div class="progress-wrapper w-75 mx-auto">
-                                                  <div class="progress-info">
-                                                      <div class="progress-percentage">
-                                                          <span class="text-xs font-weight-bold">10%</span>
-                                                      </div>
-                                                  </div>
-                                                  <div class="progress">
-                                                      <div class="progress-bar bg-gradient-info w-10"
-                                                          role="progressbar" aria-valuenow="10" aria-valuemin="0"
-                                                          aria-valuemax="100"></div>
-                                                  </div>
-                                              </div>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex px-2 py-1">
-                                                  <div>
-                                                      <img src="{{ asset('assets') }}/img/small-logos/logo-slack.svg"
-                                                          class="avatar avatar-sm me-3" alt="team7">
-                                                  </div>
-                                                  <div class="d-flex flex-column justify-content-center">
-                                                      <h6 class="mb-0 text-sm">Fix Platform Errors</h6>
-                                                  </div>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="avatar-group mt-2">
-                                                  <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                                      data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                      title="Romina Hadid">
-                                                      <img src="{{ asset('assets') }}/img/team-3.jpg" alt="team8">
-                                                  </a>
-                                                  <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                                      data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                      title="Jessica Doe">
-                                                      <img src="{{ asset('assets') }}/img/team-1.jpg" alt="team9">
-                                                  </a>
-                                              </div>
-                                          </td>
-                                          <td class="align-middle text-center text-sm">
-                                              <span class="text-xs font-weight-bold"> Not set </span>
-                                          </td>
-                                          <td class="align-middle">
-                                              <div class="progress-wrapper w-75 mx-auto">
-                                                  <div class="progress-info">
-                                                      <div class="progress-percentage">
-                                                          <span class="text-xs font-weight-bold">100%</span>
-                                                      </div>
-                                                  </div>
-                                                  <div class="progress">
-                                                      <div class="progress-bar bg-gradient-success w-100"
-                                                          role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                                                          aria-valuemax="100"></div>
-                                                  </div>
-                                              </div>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex px-2 py-1">
-                                                  <div>
-                                                      <img src="{{ asset('assets') }}/img/small-logos/logo-spotify.svg"
-                                                          class="avatar avatar-sm me-3" alt="spotify">
-                                                  </div>
-                                                  <div class="d-flex flex-column justify-content-center">
-                                                      <h6 class="mb-0 text-sm">Launch our Mobile App</h6>
-                                                  </div>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="avatar-group mt-2">
-                                                  <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                                      data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                      title="Ryan Tompson">
-                                                      <img src="{{ asset('assets') }}/img/team-4.jpg" alt="user1">
-                                                  </a>
-                                                  <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                                      data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                      title="Romina Hadid">
-                                                      <img src="{{ asset('assets') }}/img/team-3.jpg" alt="user2">
-                                                  </a>
-                                                  <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                                      data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                      title="Alexander Smith">
-                                                      <img src="{{ asset('assets') }}/img/team-4.jpg" alt="user3">
-                                                  </a>
-                                                  <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                                      data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                      title="Jessica Doe">
-                                                      <img src="{{ asset('assets') }}/img/team-1.jpg" alt="user4">
-                                                  </a>
-                                              </div>
-                                          </td>
-                                          <td class="align-middle text-center text-sm">
-                                              <span class="text-xs font-weight-bold"> $20,500 </span>
-                                          </td>
-                                          <td class="align-middle">
-                                              <div class="progress-wrapper w-75 mx-auto">
-                                                  <div class="progress-info">
-                                                      <div class="progress-percentage">
-                                                          <span class="text-xs font-weight-bold">100%</span>
-                                                      </div>
-                                                  </div>
-                                                  <div class="progress">
-                                                      <div class="progress-bar bg-gradient-success w-100"
-                                                          role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                                                          aria-valuemax="100"></div>
-                                                  </div>
-                                              </div>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex px-2 py-1">
-                                                  <div>
-                                                      <img src="{{ asset('assets') }}/img/small-logos/logo-jira.svg"
-                                                          class="avatar avatar-sm me-3" alt="jira">
-                                                  </div>
-                                                  <div class="d-flex flex-column justify-content-center">
-                                                      <h6 class="mb-0 text-sm">Add the New Pricing Page</h6>
-                                                  </div>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="avatar-group mt-2">
-                                                  <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                                      data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                      title="Ryan Tompson">
-                                                      <img src="{{ asset('assets') }}/img/team-4.jpg" alt="user5">
-                                                  </a>
-                                              </div>
-                                          </td>
-                                          <td class="align-middle text-center text-sm">
-                                              <span class="text-xs font-weight-bold"> $500 </span>
-                                          </td>
-                                          <td class="align-middle">
-                                              <div class="progress-wrapper w-75 mx-auto">
-                                                  <div class="progress-info">
-                                                      <div class="progress-percentage">
-                                                          <span class="text-xs font-weight-bold">25%</span>
-                                                      </div>
-                                                  </div>
-                                                  <div class="progress">
-                                                      <div class="progress-bar bg-gradient-info w-25"
-                                                          role="progressbar" aria-valuenow="25" aria-valuemin="0"
-                                                          aria-valuemax="25"></div>
-                                                  </div>
-                                              </div>
-                                          </td>
-                                      </tr>
-                                      <tr>
-                                          <td>
-                                              <div class="d-flex px-2 py-1">
-                                                  <div>
-                                                      <img src="{{ asset('assets') }}/img/small-logos/logo-invision.svg"
-                                                          class="avatar avatar-sm me-3" alt="invision">
-                                                  </div>
-                                                  <div class="d-flex flex-column justify-content-center">
-                                                      <h6 class="mb-0 text-sm">Redesign New Online Shop</h6>
-                                                  </div>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="avatar-group mt-2">
-                                                  <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                                      data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                      title="Ryan Tompson">
-                                                      <img src="{{ asset('assets') }}/img/team-1.jpg" alt="user6">
-                                                  </a>
-                                                  <a href="javascript:;" class="avatar avatar-xs rounded-circle"
-                                                      data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                      title="Jessica Doe">
-                                                      <img src="{{ asset('assets') }}/img/team-4.jpg" alt="user7">
-                                                  </a>
-                                              </div>
-                                          </td>
-                                          <td class="align-middle text-center text-sm">
-                                              <span class="text-xs font-weight-bold"> $2,000 </span>
-                                          </td>
-                                          <td class="align-middle">
-                                              <div class="progress-wrapper w-75 mx-auto">
-                                                  <div class="progress-info">
-                                                      <div class="progress-percentage">
-                                                          <span class="text-xs font-weight-bold">40%</span>
-                                                      </div>
-                                                  </div>
-                                                  <div class="progress">
-                                                      <div class="progress-bar bg-gradient-info w-40"
-                                                          role="progressbar" aria-valuenow="40" aria-valuemin="0"
-                                                          aria-valuemax="40"></div>
-                                                  </div>
-                                              </div>
-                                          </td>
-                                      </tr>
-                                  </tbody>
-                              </table>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                  <div class="card h-100">
-                      <div class="card-header pb-0">
-                          <h6>Orders overview</h6>
-                          <p class="text-sm">
-                              <i class="fa fa-arrow-up text-success" aria-hidden="true"></i>
-                              <span class="font-weight-bold">24%</span> this month
-                          </p>
-                      </div>
-                      <div class="card-body p-3">
-                          <div class="timeline timeline-one-side">
-                              <div class="timeline-block mb-3">
-                                  <span class="timeline-step">
-                                      <i class="material-icons text-success text-gradient">notifications</i>
-                                  </span>
-                                  <div class="timeline-content">
-                                      <h6 class="text-dark text-sm font-weight-bold mb-0">$2400, Design changes
-                                      </h6>
-                                      <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">22 DEC 7:20 PM
-                                      </p>
-                                  </div>
-                              </div>
-                              <div class="timeline-block mb-3">
-                                  <span class="timeline-step">
-                                      <i class="material-icons text-danger text-gradient">code</i>
-                                  </span>
-                                  <div class="timeline-content">
-                                      <h6 class="text-dark text-sm font-weight-bold mb-0">New order #1832412</h6>
-                                      <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">21 DEC 11 PM
-                                      </p>
-                                  </div>
-                              </div>
-                              <div class="timeline-block mb-3">
-                                  <span class="timeline-step">
-                                      <i class="material-icons text-info text-gradient">shopping_cart</i>
-                                  </span>
-                                  <div class="timeline-content">
-                                      <h6 class="text-dark text-sm font-weight-bold mb-0">Server payments for
-                                          April</h6>
-                                      <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">21 DEC 9:34 PM
-                                      </p>
-                                  </div>
-                              </div>
-                              <div class="timeline-block mb-3">
-                                  <span class="timeline-step">
-                                      <i class="material-icons text-warning text-gradient">credit_card</i>
-                                  </span>
-                                  <div class="timeline-content">
-                                      <h6 class="text-dark text-sm font-weight-bold mb-0">New card added for order
-                                          #4395133</h6>
-                                      <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">20 DEC 2:20 AM
-                                      </p>
-                                  </div>
-                              </div>
-                              <div class="timeline-block mb-3">
-                                  <span class="timeline-step">
-                                      <i class="material-icons text-primary text-gradient">key</i>
-                                  </span>
-                                  <div class="timeline-content">
-                                      <h6 class="text-dark text-sm font-weight-bold mb-0">Unlock packages for
-                                          development</h6>
-                                      <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">18 DEC 4:54 AM
-                                      </p>
-                                  </div>
-                              </div>
-                              <div class="timeline-block">
-                                  <span class="timeline-step">
-                                      <i class="material-icons text-dark text-gradient">payments</i>
-                                  </span>
-                                  <div class="timeline-content">
-                                      <h6 class="text-dark text-sm font-weight-bold mb-0">New order #9583120</h6>
-                                      <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">17 DEC</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+          <p class="mb-0 text-heading">On route vehicles</p>
+          <p class="mb-0">
+            <span class="me-1">+18.2%</span>
+            <small class="text-muted">than last week</small>
+          </p>
+        </div>
       </div>
+    </div>
+    <div class="col-sm-6 col-lg-3 mb-4">
+      <div class="card card-border-shadow-warning h-100">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2 pb-1">
+            <div class="avatar me-2">
+              <span class="avatar-initial rounded bg-label-warning">
+                <i class="mdi mdi-alert mdi-20px"></i
+              ></span>
+            </div>
+            <h4 class="ms-1 mb-0 display-6">8</h4>
+          </div>
+          <p class="mb-0 text-heading">Vehicles with errors</p>
+          <p class="mb-0">
+            <span class="me-1">-8.7%</span>
+            <small class="text-muted">than last week</small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-3 mb-4">
+      <div class="card card-border-shadow-danger h-100">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2 pb-1">
+            <div class="avatar me-2">
+              <span class="avatar-initial rounded bg-label-danger">
+                <i class="mdi mdi-source-fork mdi-20px"></i>
+              </span>
+            </div>
+            <h4 class="ms-1 mb-0 display-6">27</h4>
+          </div>
+          <p class="mb-0 text-heading">Deviated from route</p>
+          <p class="mb-0">
+            <span class="me-1">+4.3%</span>
+            <small class="text-muted">than last week</small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-3 mb-4">
+      <div class="card card-border-shadow-info h-100">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2 pb-1">
+            <div class="avatar me-2">
+              <span class="avatar-initial rounded bg-label-info"
+                ><i class="mdi mdi-timer-outline mdi-20px"></i
+              ></span>
+            </div>
+            <h4 class="ms-1 mb-0 display-6">13</h4>
+          </div>
+          <p class="mb-0 text-heading">Late vehicles</p>
+          <p class="mb-0">
+            <span class="me-1">-2.5%</span>
+            <small class="text-muted">than last week</small>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
+  <!--/ Card Border Shadow -->
+  <div class="row">
+    <!-- Vehicles overview -->
+    <div class="col-xxl-6 mb-4 order-5 order-xxl-0">
+      <div class="card h-100">
+        <div class="card-header d-flex align-items-center justify-content-between">
+          <h5 class="card-title mb-0 me-2">Vehicles overview</h5>
+          <div class="dropdown">
+            <button
+              class="btn p-0"
+              type="button"
+              id="topic"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
+              <i class="mdi mdi-dots-vertical mdi-24px"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="topic">
+              <a class="dropdown-item" href="javascript:void(0);">Highest Views</a>
+              <a class="dropdown-item" href="javascript:void(0);">See All</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="d-none d-lg-flex vehicles-progress-labels mb-3">
+            <div class="vehicles-progress-label on-the-way-text" style="width: 39.7%">On the way</div>
+            <div class="vehicles-progress-label unloading-text" style="width: 28.3%">Unloading</div>
+            <div class="vehicles-progress-label loading-text" style="width: 17.4%">Loading</div>
+            <div class="vehicles-progress-label waiting-text" style="width: 14.6%">Waiting</div>
+          </div>
+          <div class="vehicles-overview-progress progress rounded mb-3" style="height: 46px">
+            <div
+              class="progress-bar fs-big fw-medium text-start bg-label-light text-heading px-1 px-lg-3"
+              role="progressbar"
+              style="width: 39.7%"
+              aria-valuenow="39.7"
+              aria-valuemin="0"
+              aria-valuemax="100">
+              39.7%
+            </div>
+            <div
+              class="progress-bar fs-big fw-medium text-start bg-primary px-1 px-lg-3"
+              role="progressbar"
+              style="width: 28.3%"
+              aria-valuenow="28.3"
+              aria-valuemin="0"
+              aria-valuemax="100">
+              28.3%
+            </div>
+            <div
+              class="progress-bar fs-big fw-medium text-start text-bg-info px-1 px-lg-3"
+              role="progressbar"
+              style="width: 17.4%"
+              aria-valuenow="17.4"
+              aria-valuemin="0"
+              aria-valuemax="100">
+              17.4%
+            </div>
+            <div
+              class="progress-bar fs-big fw-medium text-start bg-gray-900 px-1 px-lg-3"
+              role="progressbar"
+              style="width: 14.6%"
+              aria-valuenow="14.6"
+              aria-valuemin="0"
+              aria-valuemax="100">
+              14.6%
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table card-table">
+              <tbody class="table-border-bottom-0">
+                <tr>
+                  <td class="w-50 ps-0">
+                    <div class="d-flex justify-content-start align-items-center">
+                      <div class="me-2">
+                        <i class="text-heading mdi mdi-bus-school"></i>
+                      </div>
+                      <h6 class="mb-0 fw-normal">On the way</h6>
+                    </div>
+                  </td>
+                  <td class="text-end pe-0 text-nowrap">
+                    <h6 class="mb-0">2hr 10min</h6>
+                  </td>
+                  <td class="text-end pe-0">
+                    <span>39.7%</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="w-50 ps-0">
+                    <div class="d-flex justify-content-start align-items-center">
+                      <div class="me-2">
+                        <i class="text-heading mdi mdi-progress-download"></i>
+                      </div>
+                      <h6 class="mb-0 fw-normal">Unloading</h6>
+                    </div>
+                  </td>
+                  <td class="text-end pe-0 text-nowrap">
+                    <h6 class="mb-0">3hr 15min</h6>
+                  </td>
+                  <td class="text-end pe-0">
+                    <span>28.3%</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="w-50 ps-0">
+                    <div class="d-flex justify-content-start align-items-center">
+                      <div class="me-2">
+                        <i class="text-heading mdi mdi-upload"></i>
+                      </div>
+                      <h6 class="mb-0 fw-normal">Loading</h6>
+                    </div>
+                  </td>
+                  <td class="text-end pe-0 text-nowrap">
+                    <h6 class="mb-0">1hr 24min</h6>
+                  </td>
+                  <td class="text-end pe-0">
+                    <span>17.4%</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="w-50 ps-0">
+                    <div class="d-flex justify-content-start align-items-center">
+                      <div class="me-2">
+                        <i class="text-heading mdi mdi-timer-outline"></i>
+                      </div>
+                      <h6 class="mb-0 fw-normal">Waiting</h6>
+                    </div>
+                  </td>
+                  <td class="text-end pe-0 text-nowrap">
+                    <h6 class="mb-0">5hr 19min</h6>
+                  </td>
+                  <td class="text-end pe-0">
+                    <span>14.6%</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Vehicles overview -->
+    <!-- Shipment statistics-->
+    <div class="col-lg-6 col-xxl-6 mb-4 order-3 order-xxl-1">
+      <div class="card">
+        <div class="card-header d-flex align-items-center justify-content-between">
+          <div class="card-title mb-0">
+            <h5 class="m-0 me-2 mb-1">Shipment statistics</h5>
+            <p class="text-body mb-0">Total number of deliveries 23.8k</p>
+          </div>
+          <div class="dropdown">
+            <button
+              type="button"
+              class="btn btn-outline-primary dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              January
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="javascript:void(0);">January</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">February</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">March</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">April</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">May</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">June</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">July</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">August</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">September</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">October</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">November</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">December</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-body">
+          <div id="shipmentStatisticsChart"></div>
+        </div>
+      </div>
+    </div>
+    <!--/ Shipment statistics -->
+    <!-- Delivery Performance -->
+    <div class="col-lg-6 col-xxl-4 mb-4 order-2 order-xxl-2">
+      <div class="card h-100">
+        <div class="card-header d-flex align-items-center justify-content-between">
+          <div class="card-title mb-0">
+            <h5 class="m-0 me-2 mb-1">Delivery Performance</h5>
+            <p class="text-body mb-0">12% increase in this month</p>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn p-0"
+              type="button"
+              id="deliveryPerformance"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
+              <i class="mdi mdi-dots-vertical mdi-24px"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="deliveryPerformance">
+              <a class="dropdown-item" href="javascript:void(0);">Select All</a>
+              <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
+              <a class="dropdown-item" href="javascript:void(0);">Share</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <ul class="p-0 m-0">
+            <li class="d-flex mb-4 pb-1">
+              <div class="avatar flex-shrink-0 me-3">
+                <span class="avatar-initial rounded bg-label-primary"
+                  ><i class="mdi mdi-wallet-giftcard mdi-24px"></i
+                ></span>
+              </div>
+              <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                <div class="me-2">
+                  <h6 class="mb-1 fw-normal">Packages in transit</h6>
+                  <small class="text-success fw-normal d-block">
+                    <i class="mdi mdi-chevron-up"></i>
+                    25.8%
+                  </small>
+                </div>
+                <div class="user-progress">
+                  <h6 class="mb-0">10k</h6>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex mb-4 pb-1">
+              <div class="avatar flex-shrink-0 me-3">
+                <span class="avatar-initial rounded bg-label-info"
+                  ><i class="mdi mdi-bus-school mdi-24px"></i
+                ></span>
+              </div>
+              <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                <div class="me-2">
+                  <h6 class="mb-1 fw-normal">Packages out for delivery</h6>
+                  <small class="text-success fw-normal d-block">
+                    <i class="mdi mdi-chevron-up"></i>
+                    4.3%
+                  </small>
+                </div>
+                <div class="user-progress">
+                  <h6 class="mb-0">5k</h6>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex mb-4 pb-1">
+              <div class="avatar flex-shrink-0 me-3">
+                <span class="avatar-initial rounded bg-label-success"
+                  ><i class="mdi mdi-check text-success mdi-24px"></i
+                ></span>
+              </div>
+              <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                <div class="me-2">
+                  <h6 class="mb-1 fw-normal">Packages delivered</h6>
+                  <small class="text-danger fw-normal d-block">
+                    <i class="mdi mdi-chevron-down"></i>
+                    12.5
+                  </small>
+                </div>
+                <div class="user-progress">
+                  <h6 class="mb-0">15k</h6>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex mb-4 pb-1">
+              <div class="avatar flex-shrink-0 me-3">
+                <span class="avatar-initial rounded bg-label-warning"
+                  ><i class="mdi mdi-home-outline mdi-24px"></i
+                ></span>
+              </div>
+              <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                <div class="me-2">
+                  <h6 class="mb-1 fw-normal">Delivery success rate</h6>
+                  <small class="text-success fw-normal d-block">
+                    <i class="mdi mdi-chevron-up"></i>
+                    35.6%
+                  </small>
+                </div>
+                <div class="user-progress">
+                  <h6 class="mb-0">95%</h6>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex mb-4 pb-1">
+              <div class="avatar flex-shrink-0 me-3">
+                <span class="avatar-initial rounded bg-label-secondary"
+                  ><i class="mdi mdi-timer-outline mdi-24px"></i
+                ></span>
+              </div>
+              <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                <div class="me-2">
+                  <h6 class="mb-1 fw-normal">Average delivery time</h6>
+                  <small class="text-danger fw-normal d-block">
+                    <i class="mdi mdi-chevron-down"></i>
+                    2.15
+                  </small>
+                </div>
+                <div class="user-progress">
+                  <h6 class="mb-0">2.5 Days</h6>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex">
+              <div class="avatar flex-shrink-0 me-3">
+                <span class="avatar-initial rounded bg-label-danger"
+                  ><i class="mdi mdi-account-outline mdi-24px"></i
+                ></span>
+              </div>
+              <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                <div class="me-2">
+                  <h6 class="mb-1 fw-normal">Customer satisfaction</h6>
+                  <small class="text-success fw-normal d-block">
+                    <i class="mdi mdi-chevron-up"></i>
+                    5.7%
+                  </small>
+                </div>
+                <div class="user-progress">
+                  <h6 class="mb-0">4.5/5</h6>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--/ Delivery Performance -->
+    <!-- Reasons for delivery exceptions -->
+    <div class="col-md-6 col-xxl-4 mb-4 order-1 order-xxl-3">
+      <div class="card h-100">
+        <div class="card-header d-flex align-items-center justify-content-between">
+          <div class="card-title mb-0">
+            <h5 class="m-0 me-2">Reasons for delivery exceptions</h5>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn p-0"
+              type="button"
+              id="deliveryExceptions"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
+              <i class="mdi mdi-dots-vertical mdi-24px"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="deliveryExceptions">
+              <a class="dropdown-item" href="javascript:void(0);">Select All</a>
+              <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
+              <a class="dropdown-item" href="javascript:void(0);">Share</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div id="deliveryExceptionsChart"></div>
+        </div>
+      </div>
+    </div>
+    <!--/ Reasons for delivery exceptions -->
+    <!-- Orders by Countries -->
+    <div class="col-md-6 col-xxl-4 mb-4 order-0 order-xxl-4">
+      <div class="card h-100">
+        <div class="card-header d-flex align-items-center justify-content-between">
+          <div class="card-title mb-0">
+            <h5 class="m-0 me-2 mb-1">Orders by Countries</h5>
+            <p class="text-body mb-0">62 deliveries in progress</p>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn p-0"
+              type="button"
+              id="ordersCountries"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
+              <i class="mdi mdi-dots-vertical mdi-24px"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="ordersCountries">
+              <a class="dropdown-item" href="javascript:void(0);">Select All</a>
+              <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
+              <a class="dropdown-item" href="javascript:void(0);">Share</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body p-0">
+          <div class="nav-align-top">
+            <ul class="nav nav-tabs nav-fill tabs-line border-bottom-0" role="tablist">
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="nav-link active"
+                  role="tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#navs-justified-new"
+                  aria-controls="navs-justified-new"
+                  aria-selected="true">
+                  New
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="nav-link"
+                  role="tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#navs-justified-link-preparing"
+                  aria-controls="navs-justified-link-preparing"
+                  aria-selected="false">
+                  Preparing
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="nav-link"
+                  role="tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#navs-justified-link-shipping"
+                  aria-controls="navs-justified-link-shipping"
+                  aria-selected="false">
+                  Shipping
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content border-0 pb-0 px-4 mx-1">
+              <div class="tab-pane fade show active" id="navs-justified-new" role="tabpanel">
+                <ul class="timeline mb-0">
+                  <li class="timeline-item ps-4 border-left-dashed">
+                    <span class="timeline-indicator-advanced text-success border-0 shadow-none">
+                      <i class="mdi mdi-check-circle-outline"></i>
+                    </span>
+                    <div class="timeline-event ps-1">
+                      <div class="timeline-header">
+                        <small class="text-success text-uppercase fw-medium">sender</small>
+                      </div>
+                      <h6 class="mb-2">Myrtle Ullrich</h6>
+                      <p class="mb-0">101 Boulder, California(CA), 95959</p>
+                    </div>
+                  </li>
+                  <li class="timeline-item ps-4 border-transparent">
+                    <span class="timeline-indicator-advanced text-primary border-0 shadow-none">
+                      <i class="mdi mdi-map-marker-outline"></i>
+                    </span>
+                    <div class="timeline-event ps-1">
+                      <div class="timeline-header">
+                        <small class="text-primary text-uppercase fw-medium">Receiver</small>
+                      </div>
+                      <h6 class="mb-2">Barry Schowalter</h6>
+                      <p class="mb-0">939 Orange, California(CA), 92118</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="border-1 border-light border-top border-dashed mb-2"></div>
+                <ul class="timeline mb-0">
+                  <li class="timeline-item ps-4 border-left-dashed">
+                    <span class="timeline-indicator-advanced text-success border-0 shadow-none">
+                      <i class="mdi mdi-check-circle-outline"></i>
+                    </span>
+                    <div class="timeline-event ps-1">
+                      <div class="timeline-header">
+                        <small class="text-success text-uppercase fw-medium">sender</small>
+                      </div>
+                      <h6 class="mb-2">Veronica Herman</h6>
+                      <p class="mb-0">162 Windsor, California(CA), 95492</p>
+                    </div>
+                  </li>
+                  <li class="timeline-item ps-4 border-transparent">
+                    <span class="timeline-indicator-advanced text-primary border-0 shadow-none">
+                      <i class="mdi mdi-map-marker-outline"></i>
+                    </span>
+                    <div class="timeline-event ps-1">
+                      <div class="timeline-header">
+                        <small class="text-primary text-uppercase fw-medium">Receiver</small>
+                      </div>
+                      <h6 class="mb-2">Helen Jacobs</h6>
+                      <p class="mb-0">487 Sunset, California(CA), 94043</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="navs-justified-link-preparing" role="tabpanel">
+                <ul class="timeline mb-0">
+                  <li class="timeline-item ps-4 border-left-dashed">
+                    <span class="timeline-indicator-advanced text-success border-0 shadow-none">
+                      <i class="mdi mdi-check-circle-outline"></i>
+                    </span>
+                    <div class="timeline-event ps-1">
+                      <div class="timeline-header">
+                        <small class="text-success text-uppercase fw-medium">sender</small>
+                      </div>
+                      <h6 class="mb-2">Barry Schowalter</h6>
+                      <p class="mb-0">939 Orange, California(CA), 92118</p>
+                    </div>
+                  </li>
+                  <li class="timeline-item ps-4 border-transparent border-left-dashed">
+                    <span class="timeline-indicator-advanced text-primary border-0 shadow-none">
+                      <i class="mdi mdi-map-marker-outline"></i>
+                    </span>
+                    <div class="timeline-event ps-1">
+                      <div class="timeline-header">
+                        <small class="text-primary text-uppercase fw-medium">Receiver</small>
+                      </div>
+                      <h6 class="mb-2">Myrtle Ullrich</h6>
+                      <p class="mb-0">101 Boulder, California(CA), 95959</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="border-1 border-light border-top border-dashed mb-2"></div>
+                <ul class="timeline mb-0">
+                  <li class="timeline-item ps-4 border-left-dashed">
+                    <span class="timeline-indicator-advanced text-success border-0 shadow-none">
+                      <i class="mdi mdi-check-circle-outline"></i>
+                    </span>
+                    <div class="timeline-event ps-1">
+                      <div class="timeline-header">
+                        <small class="text-success text-uppercase fw-medium">sender</small>
+                      </div>
+                      <h6 class="mb-2">Veronica Herman</h6>
+                      <p class="mb-0">162 Windsor, California(CA), 95492</p>
+                    </div>
+                  </li>
+                  <li class="timeline-item ps-4 border-transparent">
+                    <span class="timeline-indicator-advanced text-primary border-0 shadow-none">
+                      <i class="mdi mdi-map-marker-outline"></i>
+                    </span>
+                    <div class="timeline-event ps-1">
+                      <div class="timeline-header">
+                        <small class="text-primary text-uppercase fw-medium">Receiver</small>
+                      </div>
+                      <h6 class="mb-2">Helen Jacobs</h6>
+                      <p class="mb-0">487 Sunset, California(CA), 94043</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="navs-justified-link-shipping" role="tabpanel">
+                <ul class="timeline mb-0">
+                  <li class="timeline-item ps-4 border-left-dashed">
+                    <span class="timeline-indicator-advanced text-success border-0 shadow-none">
+                      <i class="mdi mdi-check-circle-outline"></i>
+                    </span>
+                    <div class="timeline-event ps-1">
+                      <div class="timeline-header">
+                        <small class="text-success text-uppercase fw-medium">sender</small>
+                      </div>
+                      <h6 class="mb-2">Veronica Herman</h6>
+                      <p class="mb-0">101 Boulder, California(CA), 95959</p>
+                    </div>
+                  </li>
+                  <li class="timeline-item ps-4 border-transparent">
+                    <span class="timeline-indicator-advanced text-primary border-0 shadow-none">
+                      <i class="mdi mdi-map-marker-outline"></i>
+                    </span>
+                    <div class="timeline-event ps-1">
+                      <div class="timeline-header">
+                        <small class="text-primary text-uppercase fw-medium">Receiver</small>
+                      </div>
+                      <h6 class="mb-2">Barry Schowalter</h6>
+                      <p class="mb-0">939 Orange, California(CA), 92118</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="border-1 border-light border-top border-dashed mb-2"></div>
+                <ul class="timeline mb-0">
+                  <li class="timeline-item ps-4 border-left-dashed">
+                    <span class="timeline-indicator-advanced text-success border-0 shadow-none">
+                      <i class="mdi mdi-check-circle-outline"></i>
+                    </span>
+                    <div class="timeline-event ps-1">
+                      <div class="timeline-header">
+                        <small class="text-success text-uppercase fw-medium">sender</small>
+                      </div>
+                      <h6 class="mb-2">Myrtle Ullrich</h6>
+                      <p class="mb-0">162 Windsor, California(CA), 95492</p>
+                    </div>
+                  </li>
+                  <li class="timeline-item ps-4 border-transparent">
+                    <span class="timeline-indicator-advanced text-primary border-0 shadow-none">
+                      <i class="mdi mdi-map-marker-outline"></i>
+                    </span>
+                    <div class="timeline-event ps-1">
+                      <div class="timeline-header">
+                        <small class="text-primary text-uppercase fw-medium">Receiver</small>
+                      </div>
+                      <h6 class="mb-2">Helen Jacobs</h6>
+                      <p class="mb-0">487 Sunset, California(CA), 94043</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Orders by Countries -->
+    <!-- On route vehicles Table -->
+    <div class="col-12 order-5">
+      <div class="card">
+        <div class="card-header d-flex align-items-center justify-content-between">
+          <div class="card-title mb-0">
+            <h5 class="m-0 me-2">On route vehicles</h5>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn p-0"
+              type="button"
+              id="routeVehicles"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
+              <i class="mdi mdi-dots-vertical mdi-24px"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="routeVehicles">
+              <a class="dropdown-item" href="javascript:void(0);">Select All</a>
+              <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
+              <a class="dropdown-item" href="javascript:void(0);">Share</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-datatable table-responsive">
+          <table class="dt-route-vehicles table">
+            <thead class="table-light">
+              <tr>
+                <th></th>
+                <th></th>
+                <th>location</th>
+                <th>starting route</th>
+                <th>ending route</th>
+                <th>warnings</th>
+                <th class="w-20">progress</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
-  @push('js')
-  <script src="{{ asset('assets') }}/js/plugins/chartjs.min.js"></script>
-  <script>
-      var ctx = document.getElementById("chart-bars").getContext("2d");
-
-      new Chart(ctx, {
-          type: "bar",
-          data: {
-              labels: ["M", "T", "W", "T", "F", "S", "S"],
-              datasets: [{
-                  label: "Sales",
-                  tension: 0.4,
-                  borderWidth: 0,
-                  borderRadius: 4,
-                  borderSkipped: false,
-                  backgroundColor: "rgba(255, 255, 255, .8)",
-                  data: [50, 20, 10, 22, 50, 10, 40],
-                  maxBarThickness: 6
-              }, ],
-          },
-          options: {
-              responsive: true,
-              maintainAspectRatio: false,
-              plugins: {
-                  legend: {
-                      display: false,
-                  }
-              },
-              interaction: {
-                  intersect: false,
-                  mode: 'index',
-              },
-              scales: {
-                  y: {
-                      grid: {
-                          drawBorder: false,
-                          display: true,
-                          drawOnChartArea: true,
-                          drawTicks: false,
-                          borderDash: [5, 5],
-                          color: 'rgba(255, 255, 255, .2)'
-                      },
-                      ticks: {
-                          suggestedMin: 0,
-                          suggestedMax: 500,
-                          beginAtZero: true,
-                          padding: 10,
-                          font: {
-                              size: 14,
-                              weight: 300,
-                              family: "Roboto",
-                              style: 'normal',
-                              lineHeight: 2
-                          },
-                          color: "#fff"
-                      },
-                  },
-                  x: {
-                      grid: {
-                          drawBorder: false,
-                          display: true,
-                          drawOnChartArea: true,
-                          drawTicks: false,
-                          borderDash: [5, 5],
-                          color: 'rgba(255, 255, 255, .2)'
-                      },
-                      ticks: {
-                          display: true,
-                          color: '#f8f9fa',
-                          padding: 10,
-                          font: {
-                              size: 14,
-                              weight: 300,
-                              family: "Roboto",
-                              style: 'normal',
-                              lineHeight: 2
-                          },
-                      }
-                  },
-              },
-          },
-      });
-
-
-      var ctx2 = document.getElementById("chart-line").getContext("2d");
-
-      new Chart(ctx2, {
-          type: "line",
-          data: {
-              labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-              datasets: [{
-                  label: "Mobile apps",
-                  tension: 0,
-                  borderWidth: 0,
-                  pointRadius: 5,
-                  pointBackgroundColor: "rgba(255, 255, 255, .8)",
-                  pointBorderColor: "transparent",
-                  borderColor: "rgba(255, 255, 255, .8)",
-                  borderColor: "rgba(255, 255, 255, .8)",
-                  borderWidth: 4,
-                  backgroundColor: "transparent",
-                  fill: true,
-                  data: [50, 40, 300, 320, 500, 350, 200, 230, 500],
-                  maxBarThickness: 6
-
-              }],
-          },
-          options: {
-              responsive: true,
-              maintainAspectRatio: false,
-              plugins: {
-                  legend: {
-                      display: false,
-                  }
-              },
-              interaction: {
-                  intersect: false,
-                  mode: 'index',
-              },
-              scales: {
-                  y: {
-                      grid: {
-                          drawBorder: false,
-                          display: true,
-                          drawOnChartArea: true,
-                          drawTicks: false,
-                          borderDash: [5, 5],
-                          color: 'rgba(255, 255, 255, .2)'
-                      },
-                      ticks: {
-                          display: true,
-                          color: '#f8f9fa',
-                          padding: 10,
-                          font: {
-                              size: 14,
-                              weight: 300,
-                              family: "Roboto",
-                              style: 'normal',
-                              lineHeight: 2
-                          },
-                      }
-                  },
-                  x: {
-                      grid: {
-                          drawBorder: false,
-                          display: false,
-                          drawOnChartArea: false,
-                          drawTicks: false,
-                          borderDash: [5, 5]
-                      },
-                      ticks: {
-                          display: true,
-                          color: '#f8f9fa',
-                          padding: 10,
-                          font: {
-                              size: 14,
-                              weight: 300,
-                              family: "Roboto",
-                              style: 'normal',
-                              lineHeight: 2
-                          },
-                      }
-                  },
-              },
-          },
-      });
-
-      var ctx3 = document.getElementById("chart-line-tasks").getContext("2d");
-
-      new Chart(ctx3, {
-          type: "line",
-          data: {
-              labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-              datasets: [{
-                  label: "Mobile apps",
-                  tension: 0,
-                  borderWidth: 0,
-                  pointRadius: 5,
-                  pointBackgroundColor: "rgba(255, 255, 255, .8)",
-                  pointBorderColor: "transparent",
-                  borderColor: "rgba(255, 255, 255, .8)",
-                  borderWidth: 4,
-                  backgroundColor: "transparent",
-                  fill: true,
-                  data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
-                  maxBarThickness: 6
-
-              }],
-          },
-          options: {
-              responsive: true,
-              maintainAspectRatio: false,
-              plugins: {
-                  legend: {
-                      display: false,
-                  }
-              },
-              interaction: {
-                  intersect: false,
-                  mode: 'index',
-              },
-              scales: {
-                  y: {
-                      grid: {
-                          drawBorder: false,
-                          display: true,
-                          drawOnChartArea: true,
-                          drawTicks: false,
-                          borderDash: [5, 5],
-                          color: 'rgba(255, 255, 255, .2)'
-                      },
-                      ticks: {
-                          display: true,
-                          padding: 10,
-                          color: '#f8f9fa',
-                          font: {
-                              size: 14,
-                              weight: 300,
-                              family: "Roboto",
-                              style: 'normal',
-                              lineHeight: 2
-                          },
-                      }
-                  },
-                  x: {
-                      grid: {
-                          drawBorder: false,
-                          display: false,
-                          drawOnChartArea: false,
-                          drawTicks: false,
-                          borderDash: [5, 5]
-                      },
-                      ticks: {
-                          display: true,
-                          color: '#f8f9fa',
-                          padding: 10,
-                          font: {
-                              size: 14,
-                              weight: 300,
-                              family: "Roboto",
-                              style: 'normal',
-                              lineHeight: 2
-                          },
-                      }
-                  },
-              },
-          },
-      });
-
-  </script>
-  @endpush
+  <!--/ On route vehicles Table -->
+</div>
+  </div>
+@push('scripts')
+<script src="/assets/vendor/libs/apex-charts/apexcharts.js"></script>
+<script src="/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+<script src="/assets/js/app-logistics-dashboard.js"></script>
+@endpush

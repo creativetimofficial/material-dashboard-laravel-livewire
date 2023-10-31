@@ -1,6 +1,6 @@
 # [Larawire]
 
-*Frontend version*: Materialize Dashboard v3.0.0. More info at https://preview.themeforest.net/item/materialize-material-design-admin-template/full_screen_preview/11446068
+*Frontend version*: Materialize Dashboard v3.0.0. More info at https://demos.pixinvent.com/materialize-html-admin-template/html/vertical-menu-template/dashboards-crm.html
 
 Acelere su desarrollo web con el Panel de administración de Bootstrap 5 creado para Laravel Framework 9.x y versiones posteriores.
 

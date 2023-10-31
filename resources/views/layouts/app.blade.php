@@ -6,16 +6,17 @@
             <x-navbars.navs.auth></x-navbars.navs.auth>
             <!-- Layout container -->
             <div class="layout-page">
-            <!-- Content wrapper -->
-             <div class="content-wrapper">
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
                 <x-navbars.sidebar></x-navbars.sidebar>
-                 <div class="container-xxl flex-grow-1 container-p-y">
+                <div class="container-xxl flex-grow-1 container-p-y">
                  {{ $slot }}
                  </div>
 
             </div>
-            <x-footers.auth></x-footers.auth>
+
         </div>
+        <x-footers.auth></x-footers.auth>
         </div>
     </div>
     @else

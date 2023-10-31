@@ -53,11 +53,12 @@
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="/assets/js/config.js"></script>
     @livewireStyles()
+    @stack('styles')
   </head>
 
   <body>
     <!-- Layout wrapper -->
-
+    {{ $slot }}
     <!-- Overlay -->
     <div class="layout-overlay layout-menu-toggle"></div>
 
@@ -79,14 +80,14 @@
     <script src="/assets/vendor/js/menu.js"></script>
 
     <!-- endbuild -->
-    {{ $slot }}
+
     <!-- Vendors JS -->
 
     <!-- Main JS -->
     <script src="/assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     @livewireScripts
-
+    @stack('scripts')
     <!-- Page JS -->
   </body>
 </html>
