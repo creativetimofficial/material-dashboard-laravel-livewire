@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "image": "1.png",
+      "name": "Jordan Stevenson",
+      "email": "susanna.Lind57@gmail.com",
+      "username": "amiccoo",
+      "role": "Admin",
+      "status": 1
+    },
+    {
+      "id": 2,
+      "image": "2.png",
+      "name": "Benedetto Rossiter",
+      "email": "estelle.Bailey10@gmail.com",
+      "username": "brossiter15",
+      "role": "Editor",
+      "status": 2
+    },
+    {
+      "id": 3,
+      "image": "3.png",
+      "name": "Bentlee Emblin",
+      "email": "milo86@hotmail.com",
+      "username": "bemblinf",
+      "role": "Author",
+      "status": 2
+    },
+    {
+      "id": 4,
+      "image": "4.png",
+      "name": "Bertha Biner",
+      "email": "lonnie35@hotmail.com",
+      "username": "bbinerh",
+      "role": "Editor",
+      "status": 1
+    },
+    {
+      "id": 5,
+      "image": "5.png",
+      "name": "Beverlie Krabbe",
+      "email": "ahmad_Collins@yahoo.com",
+      "username": "bkrabbe1d",
+      "role": "Maintainer",
+      "status": 2
+    },
+    {
+      "id": 6,
+      "image": "6.png",
+      "name": "Bradan Rosebotham",
+      "email": "tillman.Gleason68@hotmail.com",
+      "username": "brosebothamz",
+      "role": "Editor",
+      "status": 1
+    },
+    {
+      "id": 7,
+      "image": "7.png",
+      "name": "Bree Kilday",
+      "email": "otho21@gmail.com",
+      "username": "bkildayr",
+      "role": "Subscriber",
+      "status": 2
+    },
+    {
+      "id": 8,
+      "image": "8.png",
+      "name": "Breena Gallemore",
+      "email": "florencio.Little@hotmail.com",
+      "username": "bgallemore6",
+      "role": "Subscriber",
+      "status": 3
+    }
+  ]
+}

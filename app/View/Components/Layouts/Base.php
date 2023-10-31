@@ -23,6 +23,11 @@ class Base extends Component
      */
     public function render()
     {
+       if (\Auth::check()) {
         return view('layouts.base');
+       } else {
+        return view('layouts.auth');
+       }
+
     }
 }

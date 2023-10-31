@@ -1,0 +1,21 @@
+.help-center-header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.help-center-header .input-wrapper {
+  max-width: 29rem;
+}
+@media (max-width: 575.98px) {
+  .help-center-header .input-wrapper {
+    max-width: 80%;
+  }
+}
+
+.light-style .help-center-header {
+  background-image: url("../../../img/pages/header-light.png");
+}
+
+.dark-style .help-center-header {
+  background-image: url("../../../img/pages/header-dark.png");
+}

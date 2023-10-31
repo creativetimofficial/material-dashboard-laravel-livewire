@@ -1,0 +1,71 @@
+.authentication-wrapper {
+  display: flex;
+  flex-basis: 100%;
+  min-height: 100vh;
+  width: 100%;
+}
+.authentication-wrapper .authentication-inner {
+  width: 100%;
+}
+.authentication-wrapper.authentication-basic {
+  align-items: center;
+  justify-content: center;
+}
+.authentication-wrapper .auth-cover-illustration {
+  z-index: 1;
+  max-inline-size: 38rem;
+}
+.authentication-wrapper .authentication-image {
+  z-index: -1;
+  inline-size: 100%;
+  inset-block-end: 7%;
+  position: absolute;
+  inset-inline-start: 0;
+}
+.authentication-wrapper.authentication-cover {
+  align-items: flex-start;
+}
+.authentication-wrapper.authentication-cover .authentication-inner {
+  min-height: 100vh;
+  position: relative;
+}
+.authentication-wrapper.authentication-cover .authentication-image {
+  inline-size: 70%;
+}
+html:not([dir=rtl]) .authentication-wrapper.authentication-cover .authentication-image {
+  inset-inline-start: unset;
+}
+.authentication-wrapper.authentication-basic .authentication-inner {
+  max-width: 450px;
+}
+.authentication-wrapper .auth-input-wrapper .auth-input {
+  max-width: 50px;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  font-size: 150%;
+}
+
+@media (max-width: 575.98px) {
+  .authentication-wrapper .auth-input-wrapper .auth-input {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 1199.98px) {
+  .authentication-cover .authentication-image {
+    inset-block-end: 9%;
+  }
+  [dir=rtl] .authentication-cover .authentication-image {
+    inline-size: 65%;
+  }
+}
+#twoStepsForm .fv-plugins-bootstrap5-row-invalid .form-control {
+  border-color: #ff4d49;
+}
+
+.light-style .authentication-wrapper .authentication-bg {
+  background-color: #fff;
+}
+
+.dark-style .authentication-wrapper .authentication-bg {
+  background-color: #30334e;
+}
