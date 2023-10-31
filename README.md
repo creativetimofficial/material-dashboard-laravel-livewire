@@ -27,7 +27,7 @@ Y Laravel: https://laravel.com/docs/10.x
 
 ## Instalación
 1. Descomprime el archivo descargado
-2. Copie y pegue la carpeta **material-dashboard-2-free-livewire-master** en su carpeta **proyectos**. Cambie el nombre de la carpeta al nombre de su proyecto.
+2. Copie y pegue la carpeta **larawire** en su carpeta **proyectos**. Cambie el nombre de la carpeta al nombre de su proyecto.
 3. En tu terminal ejecuta `composer install`
 4. Copie `.env.example` a `.env` y actualice las configuraciones (principalmente la configuración de la base de datos)
 5. En tu terminal ejecuta `php crafts key:generate`
