@@ -14,6 +14,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+
+        $this->call([
+            EmpresaTableSeeder::class,
+
+        ]);
+
         User::factory()->create([
             'name' => 'Admin',
             'email' => 'admin@material.com',
