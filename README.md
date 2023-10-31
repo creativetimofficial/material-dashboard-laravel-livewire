@@ -7,8 +7,8 @@ Acelere su desarrollo web con el Panel de administración de Bootstrap 5 creado 
 Si desea obtener más funciones, conviértase en PRO con [Larawire PRO]
 
 ## Tabla de contenido
-* [Pre-requisitos](#prerequisites)
-* [Instalación](#installation)
+* [Pre-requisitos](#pre-requisitos)
+* [Instalación](#instalación)
 * [Acceso](#login)
 * [Registro](#register)
 * [Olvido de contraseña](#forgot-password)
