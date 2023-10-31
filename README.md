@@ -30,9 +30,9 @@ Y Laravel: https://laravel.com/docs/10.x
 2. Copie y pegue la carpeta **larawire** en su carpeta **proyectos**. Cambie el nombre de la carpeta al nombre de su proyecto.
 3. En tu terminal ejecuta `composer install`
 4. Copie `.env.example` a `.env` y actualice las configuraciones (principalmente la configuración de la base de datos)
-5. En tu terminal ejecuta `php crafts key:generate`
-6. Ejecute `php articulado migrar --seed` para crear las tablas de la base de datos y sembrar las tablas de roles y usuarios.
-7. Ejecute `php artisan Storage:link` para crear el enlace simbólico de almacenamiento (si está utilizando **Vagrant** con **Homestead** para el desarrollo, recuerde ingresar mediante ssh a su máquina virtual y ejecutar el comando desde allí).
+5. En tu terminal ejecuta `php artisan key:generate`
+6. Ejecute `php artisan migrate --seed` para crear las tablas de la base de datos y sembrar las tablas de roles y usuarios.
+7. Ejecute `php artisan storage:link` para crear el enlace simbólico de almacenamiento (si está utilizando **Vagrant** con **Homestead** para el desarrollo, recuerde ingresar mediante ssh a su máquina virtual y ejecutar el comando desde allí).
 
 
 ## Uso
