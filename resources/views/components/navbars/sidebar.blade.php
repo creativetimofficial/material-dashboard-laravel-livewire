@@ -3,7 +3,7 @@
       <ul class="menu-inner">
         <!-- Dashboards -->
         <li class="menu-item">
-            <a href="{{route('dashboard.index')}}" class="menu-link">
+            <a href="{{route('dashboard')}}" class="menu-link">
               <i class="menu-icon tf-icons mdi mdi-home-outline"></i>
               <div data-i18n="Inicio">Inicio</div>
             </a>

@@ -45,5 +45,5 @@ Route::get('user-profile', UserProfile::class)->middleware('auth')->name('user-p
 Route::get('user-management', UserManagement::class)->middleware('auth')->name('user-management');
 
 Route::group(['middleware' => 'auth'], function () {
-Route::get('dashboard', Dashboard::class)->name('dashboard.index');
+Route::get('dashboard', Dashboard::class)->name('dashboard');
 });
