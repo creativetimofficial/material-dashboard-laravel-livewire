@@ -22,5 +22,15 @@ class EmpresaTableSeeder extends Seeder
         $empresa->logo2 = 'logo_mini.png';
         $empresa->status    = 1;
         $empresa->save();
+
+
+        \DB::table('agencias')->insert([
+
+            'code' => uniqid(),
+            'name' => 'Caracas',
+            'status' => 1,
+            'empresa_id' => 1
+
+        ]);
     }
 }
