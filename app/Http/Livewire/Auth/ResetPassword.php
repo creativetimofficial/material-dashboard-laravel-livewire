@@ -26,16 +26,17 @@ class ResetPassword extends Component
 
     public function mount($id) {
         $existingUser = User::find($id);
+        $this->email = $existingUser->email;
         $this->urlID = intval($existingUser->id);
     }
 
     public function update(){
-        
-        $this->validate(); 
-          
+
+        $this->validate();
+
         $existingUser = User::where('email', $this->email)->first();
 
-        if($existingUser && $existingUser->id == $this->urlID) { 
+        if($existingUser && $existingUser->id == $this->urlID) {
             $existingUser->update([
                 'password' => $this->password
             ]);
@@ -43,7 +44,7 @@ class ResetPassword extends Component
         } else {
             return back()->with('email', "We can't find any user with that email address.");
         }
-    
+
     }
 
 }

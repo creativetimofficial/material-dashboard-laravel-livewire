@@ -1,5 +1,6 @@
 <x-layouts.base>
 
+    @auth
     <div class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
         <div class="layout-container">
             <x-navbars.navs.auth></x-navbars.navs.auth>
@@ -17,5 +18,8 @@
         </div>
         </div>
     </div>
+    @else
+    {{ $slot }}
+    @endauth
 
 </x-layouts.base>

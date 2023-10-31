@@ -61,6 +61,28 @@
           <!-- /Logo -->
 
           <div class="card-body mt-2">
+            @if (Session::has('status'))
+            <div class="alert alert-success alert-dismissible" role="alert">
+                {{ Session::get('status') }}
+                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+             </div>
+            @elseif (Session::has('email'))
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                {{ Session::get('email') }}
+                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+             </div>
+            @endif
+            @if (Session::has('demo'))
+            <div class="row">
+                <div class="alert alert-danger alert-dismissible text-white" role="alert">
+                    <span class="text-sm">{{ Session::get('demo') }}</span>
+                    <button type="button" class="btn-close text-lg py-3 opacity-10"
+                        data-bs-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+            @endif
             <h4 class="mb-2">Welcome to Materialize! 👋</h4>
             <p class="mb-4">Please sign-in to your account and start the adventure</p>
 
@@ -68,7 +90,7 @@
               <div class="form-floating form-floating-outline mb-3">
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control  @error('email') is-invalid @enderror"
                   id="email"
                   wire:model="email"
                   placeholder="Enter your email or username"
@@ -86,14 +108,20 @@
                       <input
                         type="password"
                         id="password"
-                        class="form-control"
+                        class="form-control  @error('password') is-invalid @enderror"
                         wire:model="password"
                         placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                         aria-describedby="password" />
+
                       <label for="password">Password</label>
+
                     </div>
+
                     <span class="input-group-text cursor-pointer"><i class="mdi mdi-eye-off-outline"></i></span>
                   </div>
+                  @error('password')
+                        <p class='text-danger inputerror'>{{ $message }} </p>
+                 @enderror
                 </div>
               </div>
               <div class="mb-3 d-flex justify-content-between">
@@ -101,7 +129,7 @@
                   <input class="form-check-input" type="checkbox" id="remember-me" />
                   <label class="form-check-label" for="remember-me"> Remember Me </label>
                 </div>
-                <a href="auth-forgot-password-basic.html" class="float-end mb-1">
+                 <a href="{{ url('forgot-password') }}"  class="float-end mb-1">
                   <span>Forgot Password?</span>
                 </a>
               </div>
@@ -112,7 +140,7 @@
 
             <p class="text-center">
               <span>New on our platform?</span>
-              <a href="auth-register-basic.html">
+              <a href="{{ route('register') }}">
                 <span>Create an account</span>
               </a>
             </p>

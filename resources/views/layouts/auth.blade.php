@@ -62,7 +62,7 @@
   <body>
     <!-- Content -->
 
-    @livewire('auth.login')
+    {{ $slot }}
     <!-- / Content -->
 
     <!-- Core JS -->
