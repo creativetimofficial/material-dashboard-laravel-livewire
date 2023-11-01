@@ -13,8 +13,8 @@
                             </div>
                             <small>Total Registrados</small>
                         </div>
-                        <span class="badge bg-label-primary rounded p-2">
-                            <i class="fa fa-user ti-sm"></i>
+                        <span class="badge bg-label-success rounded p-2">
+                            <i class="mdi mdi-shield-account ti-sm"></i>
                         </span>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                             <small>Total en espera </small>
                         </div>
                         <span class="badge bg-label-danger rounded p-2">
-                            <i class="fas fa-user-check ti-sm"></i>
+                            <i class="mdi mdi-close-box-multiple ti-sm"></i>
                         </span>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                             <small>Total de activos</small>
                         </div>
                         <span class="badge bg-label-success rounded p-2">
-                            <i class="fas fa-user-check ti-sm"></i>
+                            <i class="mdi  mdi-check-all ti-sm"></i>
                         </span>
                     </div>
                 </div>
