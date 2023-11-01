@@ -1,0 +1,47 @@
+.vehicles-progress-labels .vehicles-progress-label {
+  position: relative;
+  padding-bottom: 15px;
+}
+.vehicles-progress-labels .vehicles-progress-label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  height: 10px;
+  width: 2px;
+}
+[dir=rtl] .vehicles-progress-labels .vehicles-progress-label::after {
+  left: unset;
+  right: 0;
+}
+
+.vehicles-overview-progress .bg-gray-900 {
+  color: #fff;
+}
+
+#shipmentStatisticsChart .apexcharts-legend-series {
+  padding: 5px 15px;
+  border-radius: 0.5rem;
+  height: 83%;
+}
+
+.light-style .vehicles-progress-labels .vehicles-progress-label::after {
+  background-color: #eaeaec;
+}
+.light-style .vehicles-overview-progress .bg-gray-900 {
+  background-color: #636578;
+}
+.light-style #shipmentStatisticsChart .apexcharts-legend-series {
+  border: 1px solid #eaeaec;
+}
+
+.dark-style .vehicles-progress-labels .vehicles-progress-label::after {
+  background-color: #464963;
+}
+.dark-style .vehicles-overview-progress .bg-gray-900 {
+  background-color: #777991;
+}
+.dark-style #shipmentStatisticsChart .apexcharts-legend-series {
+  border: 1px solid #464963;
+}

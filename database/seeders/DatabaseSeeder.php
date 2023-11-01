@@ -14,10 +14,20 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::factory()->create([
-            'name' => 'Admin',
-            'email' => 'admin@material.com',
-            'password' => ('secret')
+
+        $this->call([
+            EmpresaTableSeeder::class,
+            RolesAndPermissionTableSeeder::class,
+
         ]);
+
+       $user = new  User();
+       $user->name = 'Admin';
+       $user->email = 'admin@material.com';
+       $user->password = ('secret');
+       $user->save();
+
+       $user->assignRole('Tecnologia');
     }
+
 }

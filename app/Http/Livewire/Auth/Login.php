@@ -23,17 +23,20 @@ class Login extends Component
     }
 
     public function mount() {
-      
-        $this->fill(['email' => 'admin@material.com', 'password' => 'secret']);    
+
+        $this->fill(['email' => 'admin@material.com', 'password' => 'secret']);
     }
-    
+
     public function store()
     {
+
+        //dd($this->email);
+
         $attributes = $this->validate();
 
         if (! auth()->attempt($attributes)) {
             throw ValidationException::withMessages([
-                'email' => 'Your provided credentials could not be verified.'
+                'email' => 'Usuario o contraseña incorrectos, intenta nuevamente.'
             ]);
         }
 

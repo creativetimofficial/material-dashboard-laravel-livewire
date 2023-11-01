@@ -1,0 +1,30 @@
+.faq-header {
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  min-height: 300px !important;
+  border-radius: 0.625rem;
+}
+.faq-header .input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 55%;
+}
+@media (max-width: 575.98px) {
+  .faq-header .input-wrapper {
+    max-width: 70%;
+  }
+}
+
+.light-style .faq-header {
+  background: url("../../../img/pages/header-light.png");
+}
+.light-style .bg-faq-section {
+  background-color: rgba(76, 78, 100, 0.03);
+}
+
+.dark-style .faq-header {
+  background: url("../../../img/pages/header-dark.png");
+}
+.dark-style .bg-faq-section {
+  background-color: rgba(234, 234, 255, 0.03);
+}

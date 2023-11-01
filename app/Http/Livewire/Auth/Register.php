@@ -11,11 +11,13 @@ class Register extends Component
     public $name ='';
     public $email = '';
     public $password = '';
+    public $password_confirmation = '';
 
     protected $rules=[
     'name' => 'required|min:3',
+    'password_confirmation' => 'required',
     'email' => 'required|email|unique:users,email',
-    'password' => 'required|min:5',];
+    'password' => 'required|min:5|confirmed',];
 
 
     public function store(){
@@ -24,10 +26,10 @@ class Register extends Component
 
         $user = User::create($attributes);
 
-        auth()->login($user);
-        
-        return redirect('/dashboard');
-    } 
+        //auth()->login($user);
+
+        return  redirect('sign-in')->with('status', '¡Usuario registrado Satisfactoriamente!');
+    }
 
     public function render()
     {

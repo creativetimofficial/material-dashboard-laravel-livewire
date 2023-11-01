@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "chart_data": [
+        0,
+        15,
+        0,
+        17,
+        5,
+        30
+      ],
+      "chart_color": "success"
+    },
+    {
+      "id": 2,
+      "chart_data": [
+        5,
+        25,
+        0,
+        30,
+        15,
+        30
+      ],
+      "chart_color": "danger"
+    }
+  ]
+}

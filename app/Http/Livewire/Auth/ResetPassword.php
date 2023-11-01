@@ -26,24 +26,25 @@ class ResetPassword extends Component
 
     public function mount($id) {
         $existingUser = User::find($id);
+        $this->email = $existingUser->email;
         $this->urlID = intval($existingUser->id);
     }
 
     public function update(){
-        
-        $this->validate(); 
-          
+
+        $this->validate();
+
         $existingUser = User::where('email', $this->email)->first();
 
-        if($existingUser && $existingUser->id == $this->urlID) { 
+        if($existingUser && $existingUser->id == $this->urlID) {
             $existingUser->update([
                 'password' => $this->password
             ]);
-            redirect('sign-in')->with('status', 'Your password has been reset!');
+            redirect('sign-in')->with('status', '¡Tu contraseña ha sido reiniciada satisfactoriamente!');
         } else {
-            return back()->with('email', "We can't find any user with that email address.");
+            return back()->with('email', "No podemos encontrar ningún usuario con esa dirección de correo electrónico.");
         }
-    
+
     }
 
 }

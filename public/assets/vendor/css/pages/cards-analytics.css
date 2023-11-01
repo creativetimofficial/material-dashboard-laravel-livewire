@@ -1,0 +1,15 @@
+#totalTransactionChart .apexcharts-series[rel="2"] {
+  transform: translateX(5px);
+}
+
+#weeklySalesChart .apexcharts-series[rel="2"] {
+  transform: translateY(-8px);
+}
+
+[dir=rtl] #projectTimelineChart .apexcharts-canvas .apexcharts-yaxis text {
+  text-anchor: end;
+}
+
+[dir=rtl] #salesCountryChart .apexcharts-data-labels text {
+  text-anchor: end;
+}
