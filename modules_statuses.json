@@ -1,4 +1,5 @@
 {
     "Empresa": true,
-    "Agencia": true
+    "Agencia": true,
+    "Role": true
 }

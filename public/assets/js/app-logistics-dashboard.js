@@ -326,6 +326,7 @@
 $(function () {
   // Variable declaration for table
   var dt_dashboard_table = $('.dt-route-vehicles');
+  $('.datatables-users').Datatable();
 
   // On route vehicles DataTable
   if (dt_dashboard_table.length) {

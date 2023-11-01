@@ -17,13 +17,17 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             EmpresaTableSeeder::class,
+            RolesAndPermissionTableSeeder::class,
 
         ]);
 
-        User::factory()->create([
-            'name' => 'Admin',
-            'email' => 'admin@material.com',
-            'password' => ('secret')
-        ]);
+       $user = new  User();
+       $user->name = 'Admin';
+       $user->email = 'admin@material.com';
+       $user->password = ('secret');
+       $user->save();
+
+       $user->assignRole('Tecnologia');
     }
+
 }
