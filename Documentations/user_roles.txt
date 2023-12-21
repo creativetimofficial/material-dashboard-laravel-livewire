@@ -1,0 +1,47 @@
+Pelajar
+- Hantar Borang Biodata Pelajar KVOJT01
+- Hantar Borang Pendaftaran (OJT) KVOJT02
+- Hantar borang aku Janji Pelajar KVOJT03
+- Hantar borang Surat Permohonan Tempat OJT(KVOTJ04) - Pendaftaran sendiri
+- Menerima Surat Jawapan Organisasi Latihan OJT(KVOTJ05)  - Pendaftaran sendiri
+- Menghantar Borang Akuan Lepas Tanggung Pelajar OJT(KVOJT6)
+- Menerima surat pengesahan penempatan(KVOJT07)
+- Menerima Surat Tamat OJT di dalam bentuk Surat Jawapan Organisasi Latihan OJT(KVOJT05) - Jika ingin menukar OL atas sebab yang munasabah sebelum 14 hari
+- Menghantar Kad Pengesahan Lapor Diri (KVOJT09)
+- Hantar buku log OJT
+- Hantar laporan OJT
+- Hantar maklum balas/aduan pelajar
+- Melihat infomasi insurans Skim Takaful Insurans Kelompok
+- Melihat infomasi insurans Skim Takaful Insurans Kelompok
+- Membuat tuntutan kemalangan
+- Menghantar borang makluma balas penyeliaan OJT (KVOJT14)
+
+KUPLI
+- Menghantar notis taklimat pertama OJT kepada pelajar
+- Menerima borang KVOJT 1~4 dan 6 daripada pelajar
+- Menghantar borang KVOJT 5 kepada pelajar
+- Menghantar notis taklimat kedua OJT kepada pelajar
+- Menghantar KVOJT 07 kepada pelajar dan PPO
+- Menerima Surat Pengesahan Pelatih OJT KVOJT 08
+- Menerima kad laporan pengesahan diri KVOJT 09 daripada pelajar
+- Sediakan jadual lawatan OJT, senarai PPO dan PP kepada pelajar
+- Menghantar Surat Pengesahan tamat OJT kepada pelajar
+- Menghantar borang maklum balas penyeliaan OJT kepada PPO
+- Menghantar borang  penilaian OJT kepada PPO
+- Menyerahkan markah penilaian kepada KJPKK
+
+Penyelaras Program
+- Melihat senarai pelajar OJT di bawah program
+- Melihat status pelajar OJT
+- Mendapat maklum balas daripada pelajar OJT melalui ruangan chat
+
+PO/PP/PPO
+- Menyemak buku log
+- Menyemak kehadiran pelajar
+- Menyemak laporan OJT
+- Menerima Surat Pengesahan Tamat OJT daripada pelajar
+- Menerima borang maklum balas penyeliaan OJT dari pelajar
+- Menerima borang penilaian pelajar dari UPLI
+- Membuat penilaian prestasi OJT pelajar di OL
+- Membuat penilaian OJT pelajar
+- Menghantar markah penilaian kepada UPLI
