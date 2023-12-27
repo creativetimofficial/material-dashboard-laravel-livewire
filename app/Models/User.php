@@ -49,4 +49,24 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function isKupli(){
+        return $this->kupli;
+    }
+    
+    public function isPenyelarasProgram(){
+        return $this->penyelaras_program;
+    }
+
+    public function isPelajar(){
+        return $this->pelajar;
+    }
+
+    public function isPensyarahPenilai(){
+        return $this->pensyarah_penilai;
+    }
+
+    public function isPensyarahPenilaiOJT(){
+        return $this->pensyarah_penilai_ojt;
+    }
 }

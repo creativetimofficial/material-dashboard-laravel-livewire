@@ -26,7 +26,7 @@
         <x-navbars.navs.auth></x-navbars.navs.auth>
         <div class="border-radius-xl mx-2 mx-md-3 position-relative"
             style="background-image: url('{{ asset('assets') }}/img/vr-bg.jpg'); background-size: cover;">
-            <x-navbars.sidebar></x-navbars.sidebar>
+            <x-navbars.sidebars.sidebar_kupli></x-navbars.sidebars.sidebar_kupli>
             <main class="main-content border-radius-lg h-100">
                 {{  $slot }}
 
@@ -36,7 +36,7 @@
         <x-plugins></x-plugins>
     </div>
     @else
-    <x-navbars.sidebar></x-navbars.sidebar>
+    <x-navbars.sidebars.sidebar_kupli></x-navbars.sidebars.sidebar_kupli>
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
         <x-navbars.navs.auth></x-navbars.navs.auth>
 
