@@ -38,11 +38,11 @@
                                 </div>
                             </div>
                             @endif
-                            <form wire:submit.prevent="show">
+                            <form wire:submit="show">
                                 
                                 <div class="input-group input-group-outline mt-3 @if(strlen($email ?? '') > 0) is-filled @endif">
                                     <label class="form-label">Email</label>
-                                    <input wire:model="email" type="email" class="form-control"
+                                    <input wire:model.live="email" type="email" class="form-control"
                                         >
                                 </div>
                                 @error('email')

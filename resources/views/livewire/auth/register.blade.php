@@ -19,11 +19,11 @@
                                         <p class="mb-0">Enter your name, email and password to register</p>
                                     </div>
                                     <div class="card-body">
-                                        <form wire:submit.prevent ="store">
+                                        <form wire:submit ="store">
 
                                             <div class="input-group input-group-outline @if(strlen($name?? '') > 0) is-filled @endif">
                                                 <label class="form-label">Name</label>
-                                                <input wire:model="name" type="text" class="form-control" 
+                                                <input wire:model.live="name" type="text" class="form-control" 
                                                 >
                                             </div>
                                             @error('name')
@@ -32,7 +32,7 @@
 
                                             <div class="input-group input-group-outline mt-3 @if(strlen($email ?? '') > 0) is-filled @endif">
                                                 <label class="form-label">Email</label>
-                                                <input wire:model="email" type="email"  class="form-control"
+                                                <input wire:model.live="email" type="email"  class="form-control"
                                                      >
                                             </div>
                                             @error('email')
@@ -41,7 +41,7 @@
 
                                             <div class="input-group input-group-outline mt-3 @if(strlen($password ?? '') > 0) is-filled @endif">
                                                 <label class="form-label">Password</label>
-                                                <input wire:model="password" type="password" class="form-control" >
+                                                <input wire:model.live="password" type="password" class="form-control" >
                                             </div>
                                             @error('password')
                                             <p class='text-danger inputerror'>{{ $message }} </p>

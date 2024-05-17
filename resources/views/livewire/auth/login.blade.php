@@ -30,7 +30,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <form wire:submit.prevent='store'>
+                                <form wire:submit='store'>
                                     @if (Session::has('status'))
                                     <div class="alert alert-success alert-dismissible text-white" role="alert">
                                         <span class="text-sm">{{ Session::get('status') }}</span>
@@ -42,7 +42,7 @@
                                     @endif
                                     <div class="input-group input-group-outline mt-3 @if(strlen($email ?? '') > 0) is-filled @endif">
                                         <label class="form-label">Email</label>
-                                        <input wire:model='email' type="email" class="form-control">
+                                        <input wire:model.live='email' type="email" class="form-control">
                                     </div>
                                     @error('email')
                                     <p class='text-danger inputerror'>{{ $message }} </p>
@@ -50,7 +50,7 @@
 
                                     <div class="input-group input-group-outline mt-3 @if(strlen($password ?? '') > 0) is-filled @endif">
                                         <label class="form-label">Password</label>
-                                        <input wire:model="password" type="password" class="form-control"
+                                        <input wire:model.live="password" type="password" class="form-control"
                                              >
                                     </div>
                                     @error('password')
