@@ -8,3 +8,6 @@ All notable changes to `Material Dashboard 2 Laravel Livewire` will be documente
 - Register
 - Forgot password
 - Profile edit
+
+## [1.1.0]
+### Update to Laravel 11.x
