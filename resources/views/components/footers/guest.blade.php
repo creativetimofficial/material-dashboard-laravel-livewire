@@ -13,12 +13,12 @@
                     for a better web.
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <!--div class="col-12 col-md-6">
                 <ul class="nav nav-footer justify-content-center justify-content-lg-end">
                     <li class="nav-item">
                         <a href="https://www.creative-tim.com" class="nav-link text-white" target="_blank">Creative
                             Tim</a>
-                    </li>
+                    </li>ßß
                     <li class="nav-item">
                         <a href="https://www.updivision.com" class="nav-link text-white" target="_blank">UPDIVISION</a>
                     </li>
@@ -34,7 +34,7 @@
                             target="_blank">License</a>
                     </li>
                 </ul>
-            </div>
+            </div-->
         </div>
     </div>
 </footer>

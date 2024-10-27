@@ -7,10 +7,10 @@
                                 <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
                                     <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Sign in</h4>
                                     <div class="row mt-3">
-                                        <h6 class='text-white text-center'>
+                                        <!--h6 class='text-white text-center'>
                                             <span class="font-weight-normal">Email:</span> admin@material.com
                                             <br>
-                                            <span class="font-weight-normal">Password:</span> secret</h6>
+                                            <span class="font-weight-normal">Password:</span> secret</h6-->
                                         <div class="col-2 text-center ms-auto">
                                             <a class="btn btn-link px-3" href="javascript:;">
                                                 <i class="fa fa-facebook text-white text-lg"></i>
@@ -65,11 +65,11 @@
                                         <button type="submit" class="btn bg-gradient-primary w-100 my-4 mb-2">Sign
                                             in</button>
                                     </div>
-                                    <p class="mt-4 text-sm text-center">
+                                    <!--p class="mt-4 text-sm text-center">
                                         Don't have an account?
                                         <a href="{{ route('register') }}"
                                             class="text-primary text-gradient font-weight-bold">Sign up</a>
-                                    </p>
+                                    </p-->
                                     <p class="text-sm text-center">
                                         Forgot your password? Reset your password
                                         <a href="{{ route('password.forgot') }}"
